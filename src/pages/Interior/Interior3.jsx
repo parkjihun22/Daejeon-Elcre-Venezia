@@ -11,7 +11,8 @@ import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
 // 이미지 파일을 추가해야 합니다
-import page1 from "../../assets/Interior/Interior3/page1.jpg";
+//import page1 from "../../assets/Interior/Interior3/page1.jpg";
+import Ready from "../../components/Ready/Ready";
 
 const Interior3 = () => {
 	const menuContents = [
@@ -60,17 +61,19 @@ const Interior3 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>대전의 눈부신 가치 위에</div>
-				<div>새로운 자부심으로 찾아옵니다.</div>
+        <div>유천의 새로운 중심에서 시작되는</div>
+        <div>대전 유천 벽산블루밍의 가치를 영상으로 확인해보세요</div>
 			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}
-			<img
+			{/*<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="대전 엘크루 베네치아 인테리어 안내"
+				alt="대전 유천 벽산블루밍 119타입 인테리어안내 image"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/>
+			/>*/}
+
+			<Ready />
 
 			<div className={styles.commonBox2}>
 				<div className={styles.notice}>

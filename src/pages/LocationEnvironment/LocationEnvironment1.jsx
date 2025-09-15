@@ -22,47 +22,46 @@ import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 const LocationSection = [
   {
     img: section2Image1,
-    titleText:
-      "확정된 개발호재로<br />대전을 더 새롭게 살수록 높아지는 미래가치",
+    titleText: "도심 재생·교통개발 호재<br />미래가치 중심 입지",
     contentText:
-      "연축지구, 효자구역 , 회덕IC <br />충청권 광역철도 등 풍부한 미래가치<br />",
+      "유천2-1구역 재개발 및 인근 정비사업 추진<br />도시철도 2호선(트램) 유천역 예정·충청권 광역철도 수혜",
   },
   {
     img: section2Image2,
-    titleText: "대우조선건설만의 특화설계 및 쾌적한 단지설계",
+    titleText: "교육 인프라 프리미엄<br />초·중·고 밀집 학세권",
     contentText:
-      "세련된 커튼월룩 외관<br />펜트리 및 광폭드레스룸 등 특화설계 적용",
+      "버드내초·신평초 등 도보권 초등학교<br />둔산 학원가 접근으로 우수한 사교육 인프라",
   },
   {
     img: section2Image3,
-    titleText: "수도권 시내·외를 더 빠르게<br />광역으로 통하는 특급 교통",
+    titleText: "서대전역+트램(2호선) 역세권<br />광역 교통 네트워크",
     contentText:
-      "2호선 읍내역(28년예정)단지 인근 역세권<br />호남고속도로, 경부고속도로 인접<br /> 광역교통 프리미엄",
+      "KTX 서대전역 생활권, 트램 유천역(예정)<br />대전~세종 BRT·주요 간선도로로 편리한 이동",
   },
   {
     img: section2Image4,
-    titleText:
-      "학교, 쇼핑,병원, 문화를 더 가깝게 한걸음에<br />모두 갖춘 중심생활",
+    titleText: "생활·쇼핑·의료 원스톱<br />도심 인프라 집약 입지",
     contentText:
-      "이마트, 하나로마트 , 오정농수산물 시장과<br /> 대전병원,회덕초등학교 등 편리한 인프라",
+      "코스트코·홈플러스·세이백화점·유천시장 인접<br />충남대병원·성모병원 등 대형 의료 접근 용이",
   },
   {
     img: section2Image5,
-    titleText: "품격있는 주거공간 프리미엄",
+    titleText: "신축 초고층 타워 스케일<br />실속형 평면 구성",
     contentText:
-      " 전세대 4BAY 판상형 설계로 활용도 높은 주거공간<br/>영구조망권으로 조망권프리미엄까지",
+      "지하 4층~지상 40층, 2개 동·301세대<br />전용 47㎡·84㎡(A/B) 실수요 맞춤형 타입",
   },
   {
     img: section2Image6,
-    titleText:
-      "대전의 중심<br /> 단지 앞 도서관, <br /> 계족산 공원프리미엄까지  ",
+    titleText: "유등천 수변·공원 프리미엄<br />쾌적한 힐링 라이프",
     contentText:
-      " 대전의 중심 핵심주거타운 <br /> 대우조선건설 프리미엄은 덤으로",
+      "유등천 산책로·체육공원 가까이<br />녹지·조경 특화로 여유로운 일상",
   },
 ];
 
+
 const LocationEnvironment1 = () => {
   const menuContents = [
+    // { title: "입지 안내영상", url: "/FloorPlan/videos" },
     { title: "입지안내", url: "/LocationEnvironment/intro" },
     { title: "프리미엄", url: "/LocationEnvironment/primium" },
   ];
@@ -92,79 +91,65 @@ const LocationEnvironment1 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
+        <Helmet>
+          {/* 페이지별 메타: title/description/og/canonical 만 관리 */}
+          <title>대전 유천 벽산블루밍 - 입지환경</title>
+          <meta
+            name="description"
+            content="대전 유천 벽산블루밍의 입지환경을 확인하세요. KTX 서대전역 생활권, 도시철도 2호선(트램) 유천역 예정, 유등천 수변과 풍부한 생활·의료·쇼핑 인프라를 갖춘 대전 중구 유천동 핵심 입지 정보를 제공합니다."
+          />
+          <meta name="robots" content="index,follow" />
+          <link rel="canonical" href="https://layershop.kr/LocationEnvironment/intro" />
 
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 입지안내</title>
-        <meta
-          name="description"
-          content="이 단지는 최적의 입지 조건과 우수한 교통망, 풍부한 생활 인프라, 쾌적한 녹지 환경이 완벽하게 어우러져, 편리한 생활과 미래 가치 상승을 기대할 수 있습니다. 입지안내를 통해 주변 시설, 접근성 및 발전 가능성을 상세히 확인해보세요"
-        />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link rel="canonical" href="https://layershop.kr/LocationEnvironment/intro" />
+          {/* Open Graph */}
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="대전 유천 벽산블루밍" />
+          <meta property="og:title" content="대전 유천 벽산블루밍 - 입지환경" />
+          <meta
+            property="og:description"
+            content="KTX 서대전역 생활권, 트램(2호선) 유천역 예정, 유등천 수변과 생활·의료·쇼핑 인프라까지—대전 유천 벽산블루밍의 핵심 입지를 한눈에 확인하세요."
+          />
+          <meta property="og:url" content="https://layershop.kr/LocationEnvironment/intro" />
+          <meta property="og:image" content="https://layershop.kr/img/og/location.jpg" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
 
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta
-          property="og:title"
-          content="대전 엘크루 베네치아 - 입지안내"
-        />
-        <meta
-          property="og:description"
-          content="이 단지는 최적의 입지 조건과 우수한 교통망, 풍부한 생활 인프라, 쾌적한 녹지 환경이 완벽하게 어우러져, 편리한 생활과 미래 가치 상승을 기대할 수 있습니다. 입지안내를 통해 주변 시설, 접근성 및 발전 가능성을 상세히 확인해보세요"
-        />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/LocationEnvironment/intro"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="대전 유천 벽산블루밍 - 입지환경" />
+          <meta
+            name="twitter:description"
+            content="KTX 서대전역 생활권, 트램(2호선) 유천역 예정, 유등천 수변과 생활·의료·쇼핑 인프라까지—대전 유천 벽산블루밍의 핵심 입지를 한눈에 확인하세요."
+          />
+          <meta name="twitter:image" content="https://layershop.kr/img/og/location.jpg" />
+          <meta name="twitter:url" content="https://layershop.kr/LocationEnvironment/intro" />
 
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 입지안내"
-        />
-        <meta
-          name="twitter:description"
-          content="이 단지는 최적의 입지 조건과 우수한 교통망, 풍부한 생활 인프라, 쾌적한 녹지 환경이 완벽하게 어우러져, 편리한 생활과 미래 가치 상승을 기대할 수 있습니다. 입지안내를 통해 주변 시설, 접근성 및 발전 가능성을 상세히 확인해보세요"
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/LocationEnvironment/intro"
-        />
+          {/* JSON-LD (대표 이미지/브레드크럼 포함) */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "대전 유천 벽산블루밍 - 입지환경",
+              "url": "https://layershop.kr/LocationEnvironment/intro",
+              "description":
+                "대전 유천 벽산블루밍의 입지환경을 확인하세요. KTX 서대전역 생활권, 도시철도 2호선(트램) 유천역 예정, 유등천 수변과 풍부한 생활·의료·쇼핑 인프라를 갖춘 대전 중구 유천동 핵심 입지 정보를 제공합니다.",
+              "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "contentUrl": "https://layershop.kr/img/og/location.jpg",
+                "width": 1200,
+                "height": 630
+              },
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://layershop.kr/" },
+                  { "@type": "ListItem", "position": 2, "name": "입지환경", "item": "https://layershop.kr/LocationEnvironment/intro" }
+                ]
+              }
+            })}
+          </script>
+        </Helmet>
 
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-				 {
-			 "@context": "https://schema.org",
-			 "@type": "WebPage",
-			 "name": "대전 엘크루 베네치아 - 입지안내",
-			 "description": "이 단지는 최적의 입지 조건과 우수한 교통망, 풍부한 생활 인프라, 쾌적한 녹지 환경이 완벽하게 어우러져, 편리한 생활과 미래 가치 상승을 기대할 수 있습니다. 입지안내를 통해 주변 시설, 접근성 및 발전 가능성을 상세히 확인해보세요",
-			 "url": "https://layershop.kr/LocationEnvironment/intro"
-				 }
-				 `}
-        </script>
-      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />
@@ -174,25 +159,25 @@ const LocationEnvironment1 = () => {
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 입지안내
+        대전 유천 벽산블루밍 - 입지안내
       </h1>
       <p className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아의 입지 안내 페이지는 이 단지의 위치와 주변 인프라에
-        대한 상세 정보를 제공합니다. 교통, 교육, 상업시설 등 다양한 생활 편의
-        시설을 고려하여 이 아파트가 제공하는 생활 환경을 종합적으로 살펴볼 수
-        있습니다. 입지 조건을 바탕으로 더 나은 선택을 할 수 있도록 돕습니다.
+        대전 유천 벽산블루밍의 입지 정보를 확인하세요. KTX 서대전역 생활권과
+        도시철도 2호선(트램) 유천역 예정, 유등천 수변과 코스트코·홈플러스·백화점 등
+        풍부한 생활·의료·쇼핑 인프라를 갖춘 편리한 도심 입지입니다.
       </p>
 
       <div className={styles.textBox}>
-        <div>갈수록 완벽해질 대전 엘크루 베네치아</div>
-        <div>살수록 높아질 더플래티넘</div>
-        <div>도시를 압도할 자부심 </div>
+        <div>유천의 중심에서 누리는 연결성</div>
+        <div>서대전역·트램(2호선) 예정, 유등천 수변 프리미엄</div>
+        <div>생활·의료·쇼핑 인프라를 한 걸음에</div>
       </div>
+
 
       <img
         src={page1}
         className={styles.image2}
-        alt="대전 엘크루 베네치아 입지안내 이미지"
+        alt="대전 유천 벽산블루밍입지환경-image1"
       />
 
       <div className={styles.section2}>
@@ -205,45 +190,11 @@ const LocationEnvironment1 = () => {
         ))}
       </div>
 
-      {/* <div className={styles.commonBox}>
+      <div className={styles.commonBox}>
         <div className={styles.notice}>
-          ※평택 브레인시티 개발계획 관련내용은 '경기도 고시 제2022-283호' 및
-          '평택도시공사 브레인시티 토지 이용 계획'을 참고하였습니다
+          ※본 홍보물의 내용과 지역도는 소비자의 이해를 돕기 위한 것으로, 개발 예정•계획 및 교통, 학교 계획 등에 관한 사항은 해당 기관의 아래 자료를 토대로 제작되었습니다. 사업계획 및 일정은 개발계획별 사업주체에 의해 변경될 수 있으며, 대전 유천 벽산블루밍 사업주체 및 시공사와 무관합니다.
         </div>
-        <div className={styles.notice}>
-          ※아주대학교 평택병원 및 카이스트 평택캠퍼스 관련 내용은 '평택시청'
-          2024년 주요업무계획을 참고하였습니다
-        </div>
-        <div className={styles.notice}>
-          ※평택동부고속화도로 관련 내용은 '평택시 고지 제 2023-407호'를
-          참고하였습니다
-        </div>
-        <div className={styles.notice}>
-          ※KTX 수원발 관련 내용은 '국토교통부 고시 제'2023-598호'를
-          참고하였습니다
-        </div>
-        <div className={styles.notice}>
-          ※GTX A·C 관련 내용은 '국토굥통부 2024년 1월 25일 보도자료 별첨
-          교통분야 3대 혁신 전략'을 참고하였습니다
-        </div>
-        <div className={styles.notice}>
-          ※신설도로 관련내용은 '경기도 평택시 고시 제2023-316호'를
-          참고하였습니다
-        </div>
-        <div className={styles.notice}>
-          ※본 홍보물의 위치도는 소비자의 이해를 돕기 위해 제작된 것으로, 실제와
-          차이가 날 수 있습니다
-        </div>
-        <div className={styles.notice}>
-          ※치도 등 상기 개발 및 료통 배정 등의 계획에 대한 사항은 추후 관계
-          기관의 사정에 따라 변경 및 취소될 수 있으며 이는 당사와 무관함을
-          알려드립니다
-        </div>
-        <div className={styles.notice}>
-          ※상기 이미지와 내용의 각종 시설(학교,도로망 등)은 지구단위계획의 변경,
-          허가관청 및 국가시책에 따라 변경될 수 있습니다.
-        </div>
-      </div> */}
+      </div>
 
       <Footer />
     </div>

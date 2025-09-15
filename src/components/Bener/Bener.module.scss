@@ -40,7 +40,7 @@
 
 .contents {
     position: absolute;
-    top: 25vh;
+    top: 29vh;
     left: 50%;
     transform: translate(-50%, -7vh);
     text-align: center;
@@ -54,7 +54,7 @@
     }
 
     @media (max-width: 900px) {
-        top: 60%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -64,20 +64,19 @@
         font-family: "Noto Sans KR", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
-        font-size: 0.8vw;
+        font-size: 1vw;
         opacity: 0;
         transform: translateY(-20px);
         transition: opacity 2s ease, transform 2s ease, font-size 1s ease-out;
 
         &.showTitle {
-            margin-top: 2vw;
             opacity: 1;
             transform: translateY(0);
             font-size: 2vw; /* 크기 살짝 커지는 효과 */
         }
 
         @media (max-width: 900px) {
-            font-size: 5vw;
+            font-size: 8vw;
         }
     }
 
@@ -98,8 +97,8 @@
         }
 
         @media (max-width: 900px) {
-            margin: 0.5vw;
-            font-size: 1.5vw;
+            margin: 1vw;
+            font-size: 2vw;
         }
     }
 }

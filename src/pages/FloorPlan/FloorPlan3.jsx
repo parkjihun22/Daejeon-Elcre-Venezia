@@ -12,13 +12,18 @@ import { Helmet } from "react-helmet-async";
 
 import page1 from "../../assets/FloorPlan/FloorPlan3/page1.jpg"
 
+
+
 const FloorPlan3 = () => {
 	const menuContents = [
-		{ title: "84A", url: "/FloorPlan/59A" },
-		{ title: "84B", url: "/FloorPlan/59B" },
-		// { title: "74㎡", url: "/FloorPlan/84A" },
-		// { title: "84㎡", url: "/FloorPlan/84B" },
+		{ title: "40", url: "/FloorPlan/59A" },
+		{ title: "59A", url: "/FloorPlan/59B" },
+		{ title: "59B", url: "/FloorPlan/84A" },
+		// { title: "84B", url: "/FloorPlan/84B" },
+		// { title: "84C", url: "/FloorPlan/114A" },
 		// { title: "세대안내영상", url: "/FloorPlan/videos" }, // 세대안내영상 링크
+		{ title: "E-모델하우스", url: "/FloorPlan/Emodel" },
+	
 	];
 
 
@@ -62,17 +67,17 @@ const FloorPlan3 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>대전의 눈부신 가치 위에</div>
-				<div>플래티넘의 새로운 자부심으로 찾아옵니다.</div>
+        <div>유천의 새로운 중심에서 시작되는</div>
+        <div>대전 유천 벽산블루밍의 가치를 영상으로 확인해보세요</div>
 			</div>
-
 			{/* 이미지에 애니메이션 효과 추가 */}
 			<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="대전 엘크루 베네치아 74타입 평면이미지"
+				alt="대전 유천 벽산블루밍 평면안내 이미지3"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/>
+
 
 			<div className={styles.commonBox2}>
 				<div className={styles.notice}>

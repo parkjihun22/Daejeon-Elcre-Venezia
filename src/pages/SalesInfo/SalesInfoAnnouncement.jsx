@@ -10,14 +10,14 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
 import page1 from "../../assets/SalesInfo/SalesInfoAnnouncement/page1.jpg";
-import pdfIcon from "../../assets/icons/pdf-icon.png"; // PDF 아이콘 이미지 임포트
+import pdfIcon from "../../assets/icons/pdf-icon.png";  // PDF 아이콘 이미지 임포트
 
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "분양일정", url: "/BusinessGuide/plan" },
-    { title: "공급안내", url: "/SalesInfo/guide" },
+    { title: "청약방법안내", url: "/SalesInfo/SubscriptionGuide" },
+    { title: "청약안내문", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
-
+    { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -66,121 +66,50 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
 
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 모집공고안내</title>
-        <meta
-          name="description"
-          content="대전 엘크루 베네치아의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요."
-        />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link
-          rel="canonical"
-          href="https://layershop.kr/SalesInfo/announcement"
-        />
+      
+<Helmet>
+               <title>대전 유천 벽산블루밍 - 모집공고안내</title>
+               <meta
+                 name="description"
+                 content="대전 유천 벽산블루밍 모집공고를 한눈에 확인하세요. 공급세대수, 전용면적, 접수 일정, 자격 요건, 제출 서류, 계약 안내 등 핵심 정보를 제공합니다."
+               />
+               <link rel="canonical" href="https://layershop.kr/SalesInfo/announcement" />
+               <meta name="robots" content="index,follow" />
+             </Helmet>
 
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta property="og:title" content="대전 엘크루 베네치아 - 모집공고안내" />
-        <meta
-          property="og:description"
-          content="대전 엘크루 베네치아의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요."
-        />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/SalesInfo/announcement"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
 
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 모집공고안내"
-        />
-        <meta
-          name="twitter:description"
-          content="대전 엘크루 베네치아의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요."
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/SalesInfo/announcement"
-        />
-
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-                 {
-             "@context": "https://schema.org",
-             "@type": "WebPage",
-             "name": "대전 엘크루 베네치아 - 모집공고안내",
-             "description": "대전 엘크루 베네치아의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.",
-             "url": "https://layershop.kr/SalesInfo/announcement"
-                 }
-                 `}
-        </script>
-      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />
-
       <Bener title="모집공고안내" />
-
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 모집공고안내
+        대전 유천 벽산블루밍 - 모집공고안내
       </h1>
       <p className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아의 모집 공고는 분양 전 단계에서 중요한 안내문입니다.
-        이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류
-        등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록
-        지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
+        대전 유천 벽산블루밍 모집공고의 중요 일정을 확인하세요. 공급 세대수와 전용면적,
+        청약(임차인) 접수 기간, 자격 요건, 제출 서류, 당첨자 발표 및 계약 절차 등
+        준비에 필요한 정보를 한곳에서 안내합니다. 공식 공고문(PDF)과 유의사항을 반드시 확인해 주세요.
       </p>
-
       <div className={styles.textBox}>
-        <div>입주자 모집공고안내를 확인하세요</div>
-        <div>대전 엘크루 베네치아</div>
+        <div>입주자 모집공고를 확인하세요</div>
+        <div>대전 유천 벽산블루밍</div>
       </div>
 
       <img
-        className={`${styles.image2} ${
-          isImage2Loaded ? styles.showImage2 : ""
-        }`}
+        className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="대전 엘크루 베네치아모집공고안내-image1"
-        onLoad={handleImageLoad} // 이미지 로드 후 애니메이션 실행
-      />
-
+        alt="대전 유천 벽산블루밍모집공고안내-image1"
+        onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
+         />
       {/* 입주자 모집공고 PDF로 보기 버튼 */}
-      <button onClick={openPDF} className={styles.pdfButton}>
-        <img src={pdfIcon} alt="PDF 아이콘" className={styles.pdfIcon} />{" "}
-        {/* 이미지 추가 */}
-        <span>
-          모집공고 PDF
-          <br />
-          확인하기
-        </span>
-      </button>
+       <button onClick={openPDF} className={styles.pdfButton}>
+                <img src={pdfIcon} alt="PDF 아이콘" className={styles.pdfIcon} /> 
+                <span>모집공고 PDF<br/>확인하기</span>
+            </button>
+
 
       {/* 로딩 중일 때 표시할 스피너 */}
       {isLoading && (
@@ -190,14 +119,12 @@ const ComplexGuide1 = () => {
           <div className={styles.spinner}></div>
         </div>
       )}
-
       <div className={styles.commonBox}>
         <div className={styles.notice}>
           ※ 상기 내용은 편집과정상 오류가 있을 수 있으니 반드시 입주자모집공고를
           확인하시기 바랍니다.
         </div>
       </div>
-
       <Footer />
     </div>
   );

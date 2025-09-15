@@ -11,8 +11,8 @@ import page1 from "../../assets/SalesInfo/SalesInfoStampTax/page1.jpg";
 
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "인터넷 청약", url: "/SalesInfo/guide" },
-    { title: "체크포인트", url: "/SalesInfo/SubscriptionGuide" },
+    { title: "청약방법안내", url: "/SalesInfo/SubscriptionGuide" },
+    { title: "청약안내문", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
     { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
@@ -48,112 +48,49 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
 
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 인지세안내</title>
-        <meta
-          name="description"
-          content="대전 엘크루 베네치아의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다."
-        />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link rel="canonical" href="https://layershop.kr/SalesInfo/stampTax" />
 
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta
-          property="og:title"
-          content="대전 엘크루 베네치아 - 인지세안내"
-        />
-        <meta
-          property="og:description"
-          content="대전 엘크루 베네치아의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다."
-        />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/SalesInfo/stampTax"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
+<Helmet>
+               <title>대전 유천 벽산블루밍 - 인지세납부안내</title>
+               <meta
+                 name="description"
+                 content="대전 유천 벽산블루밍 인지세 납부 안내. 계약서 금액 구간별 인지세 개요, 전자수입인지(온라인) 구매·납부 방법, 제출·보관 및 유의사항을 한눈에 확인하세요."
+               />
+               <link rel="canonical" href="https://layershop.kr/SalesInfo/stampTax" />
+               <meta name="robots" content="index,follow" />
+             </Helmet>
 
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 인지세안내"
-        />
-        <meta
-          name="twitter:description"
-          content="대전 엘크루 베네치아의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다."
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/SalesInfo/stampTax"
-        />
-
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-                 {
-             "@context": "https://schema.org",
-             "@type": "WebPage",
-             "name": "대전 엘크루 베네치아 - 인지세안내",
-             "description": "대전 엘크루 베네치아의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다.",
-             "url": "https://layershop.kr/SalesInfo/stampTax"
-                 }
-                 `}
-        </script>
-      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />
 
-      <Bener title="청약안내" />
+      <Bener title="인지세납부안내" />
 
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 인지세안내
+        대전 유천 벽산블루밍 - 인지세안내
       </h1>
       <p className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아의 인지세 안내 페이지는 분양과 관련된 세금 정보를
-        제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에
-        파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법,
-        세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록
-        돕습니다.
+        이 페이지는 계약서 작성 시 부과되는 인지세에 대한 기본 정보를 제공합니다.
+        전자수입인지(온라인) 구매·납부 절차와 제출·보관 방법, 환불·분실 시 유의사항 등을
+        확인하여 계약 과정을 정확하고 빠르게 진행하세요.
       </p>
 
       <div className={styles.textBox}>
-        <div>인터넷 청약하는 방법을 확인하세요</div>
-        <div>소수만 누리는 프리미엄 대전 엘크루 베네치아</div>
+        <div>인지세 납부 방법을 확인하세요</div>
+        <div>대전 유천 벽산블루밍 계약 안내</div>
       </div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
       <img
-        className={`${styles.image2} ${
-          isImage2Loaded ? styles.showImage2 : ""
-        }`}
+        className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="대전 엘크루 베네치아인지세안내-image1"
-        onLoad={handleImageLoad} // 이미지 로드 후 애니메이션 실행
+        alt="대전 유천 벽산블루밍 인지세 납부 안내 이미지"
+        onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
       />
+
+
 
       <div className={styles.commonBox2}>
         <div className={styles.notice}>

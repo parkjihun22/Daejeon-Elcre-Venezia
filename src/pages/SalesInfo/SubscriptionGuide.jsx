@@ -10,10 +10,11 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 import page1 from "../../assets/SalesInfo/SubscriptionGuide/page1.jpg";
 
+
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "인터넷 청약", url: "/SalesInfo/guide" },
-    { title: "체크포인트", url: "/SalesInfo/SubscriptionGuide" },
+    { title: "청약방법안내", url: "/SalesInfo/SubscriptionGuide" },
+    { title: "청약안내문", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
     { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
@@ -49,82 +50,15 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
-
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 체크포인트</title>
-        <meta
-          name="description"
-          content="대전 엘크루 베네치아 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다."
-        />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link
-          rel="canonical"
-          href="https://layershop.kr/SalesInfo/SubscriptionGuide"
-        />
-
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta
-          property="og:title"
-          content="대전 엘크루 베네치아 - 체크포인트"
-        />
-        <meta
-          property="og:description"
-          content="대전 엘크루 베네치아 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다."
-        />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/SalesInfo/SubscriptionGuide"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
-
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 체크포인트"
-        />
-        <meta
-          name="twitter:description"
-          content="대전 엘크루 베네치아 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다."
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/SalesInfo/SubscriptionGuide"
-        />
-
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-                 {
-             "@context": "https://schema.org",
-             "@type": "WebPage",
-             "name": "대전 엘크루 베네치아 - 체크포인트",
-             "description": "대전 엘크루 베네치아 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.",
-             "url": "https://layershop.kr/SalesInfo/SubscriptionGuide"
-                 }
-                 `}
-        </script>
-      </Helmet>
+             <Helmet>
+               <title>대전 유천 벽산블루밍 - 청약방법안내</title>
+               <meta
+                 name="description"
+                 content="대전 유천 벽산블루밍 청약(임차인 모집) 방법을 한눈에 확인하세요. 신청 자격, 준비 서류, 온라인 접수 절차, 일정 및 유의사항을 안내합니다."
+               />
+               <link rel="canonical" href="https://layershop.kr/SalesInfo/SubscriptionGuide" />
+               <meta name="robots" content="index,follow" />
+             </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />
@@ -134,29 +68,29 @@ const ComplexGuide1 = () => {
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 체크포인트
+        대전 유천 벽산블루밍 - 체크포인트
       </h1>
       <p className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 분양 전 필수 체크포인트를 확인하세요. 청약 자격,
-        서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을
-        정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수
-        있도록 돕습니다.
+        대전 유천 벽산블루밍 청약(임차인 모집) 전 반드시 확인해야 할 체크포인트입니다.
+        신청 자격과 증빙 서류, 온라인 접수 방법, 접수·발표·계약 일정, 인지세 등 유의사항을
+        단계별로 점검해 실수 없이 진행하세요.
       </p>
 
       <div className={styles.textBox}>
-        <div>대전 엘크루 베네치아이 눈부신 가치 위에</div>
-        <div>새로운 자부심으로 찾아옵니다.</div>
+        <div>유천의 새로운 시작을 위한 체크리스트</div>
+        <div>대전 유천 벽산블루밍 청약(임차인) 절차를 간편하게</div>
       </div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
       <img
-        className={`${styles.image2} ${
-          isImage2Loaded ? styles.showImage2 : ""
-        }`}
+        className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="대전 엘크루 베네치아청약체크포인트-image1"
-        onLoad={handleImageLoad} // 이미지 로드 후 애니메이션 실행
+        alt="대전 유천 벽산블루밍 청약방법안내 이미지"
+        onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
       />
+
+
+
 
       <div className={styles.commonBox2}>
         <div className={styles.notice}>

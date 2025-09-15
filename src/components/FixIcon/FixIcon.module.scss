@@ -30,22 +30,26 @@
         transform: translate(-50%, -50%);
         padding: 2vw 0;
         width: 7.5vw;
-        background-color: #1a2c4d;
+        background-color: #0b4f73;
         border-radius: 50%;
+
         text-align: center;
         text-decoration: none;
         line-height: 1.8vw;
         font-family: "Noto Sans KR", sans-serif;
         font-size: 1.3vw;
         color: #FFFFFF;
+
     }
 
     &:hover {
         padding: 1vw;
-        background-color: #1a2c4d;
+        background-color: #0b4f73;
         border-radius: 50%;
         transform: scale(1.1);
+        /* 컨테이너가 커지는 효과 */
         transition: transform 0.4s ease;
+        /* 부드러운 전환 */
     }
 
     cursor: pointer;
@@ -56,12 +60,13 @@
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
-/* FixIcon 모바일 버튼 컨테이너 */
+
 .buttomBtnContainer {
     display: flex;
     flex-direction: row;
@@ -101,11 +106,11 @@
 }
 
 .buttomBtnContainer .btn1 {
-    background-color: #1a2c4d;
+    background-color: #0b4f73;
 }
 
 .buttomBtnContainer .btn2 {
     background-color: #ffffff;
     border: none;
-    color: #1a2c4d;
+    color: #0b4f73;
 }

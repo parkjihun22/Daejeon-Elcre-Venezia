@@ -1,155 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>대전 유천 벽산블루밍</title>
+    <link>https://layershop.kr/</link>
+    <description>대전 유천 벽산블루밍 공식 안내 RSS입니다. 단지 개요, 위치 및 생활권, 청약·모집 안내, 평면 정보, 커뮤니티, 보도자료 등을 확인하실 수 있습니다.</description>
+    <language>ko-KR</language>
+    <atom:link href="https://layershop.kr/rss.xml" rel="self" type="application/rss+xml"/>
 
-<rss version="2.0">
-    <channel>
-        <title>대전 엘크루 베네치아</title>
-        <link>https://layershop.kr/</link>
-        <description>
-            대전 엘크루 베네치아｜☎ 1533-8848｜ 대전엘크루 베네치아  모델하우스｜엘크루 베네치아  ｜사업개요｜입지안내｜단지안내｜세대안내｜방문예약｜모델하우스
-        </description>
-        <language>ko-kr</language>
+    <item>
+      <title>모바일 상담 예약</title>
+      <link>https://layershop.kr/Promotion/Customer</link>
+      <guid isPermaLink="true">https://layershop.kr/Promotion/Customer</guid>
+      <description><![CDATA[모바일로 편리하게 상담을 예약하실 수 있습니다. 기본 안내와 문의 접수 후 담당자가 순차적으로 연락드립니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>대전 엘크루 베네치아</title>
-            <link>https://layershop.kr/Brand/intro</link>
-            <description>대전 엘크루 베네치아의 건설사 브랜드 가치에 대한 설명란입니다
-            대우조선건설은 사람과 자연이 함께하는 주거 문화 공간을 표방하며 ‘편안하고 살기 좋은 집’이라는 주거 공간의 본질에 대한 메시지로 브랜드 신뢰감을 지속적으로 구축해왔습니다.
-            1994년 업계 최초 ‘그린 홈, 크린 아파트’의 친환경 개념을 도입하였고 2003년에는 친환경 주거 철학을 집약한 대우조선건설 브랜드를 론칭했습니다.</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>브랜드 영상</title>
-            <link>https://layershop.kr/Brand/video</link>
-            <description>대전 엘크루 베네치아의 대한 홍보영상입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>브랜드 소개</title>
+      <link>https://layershop.kr/Brand/intro</link>
+      <guid isPermaLink="true">https://layershop.kr/Brand/intro</guid>
+      <description><![CDATA[벽산블루밍의 주거 철학과 디자인 방향, 품질 기준을 소개합니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>사업안내</title>
-            <link>https://layershop.kr/BusinessGuide/intro</link>
-            <description>단지명 대전 엘크루 베네치아
-            사업명 회덕지역주택조합 공동주택 신축공사 대전광역시 대덕구 읍내동 51-9번지 일원 </description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>분양일정</title>
-            <link>https://layershop.kr/BusinessGuide/plan</link>
-            <description>단지명 대전 엘크루 베네치아 
-            대전광역시 대덕구 읍내동 51-9번지 일원에 들어오는 대우조선건설의 분양일정을 확인하세요 </description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>계약서류안내</title>
-            <link>https://layershop.kr/BsinessGuide/documents</link>
-            <description>대전 엘크루 베네치아 아파트를 계약할때 필요한 구비서류 안내란입니다 </description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>홍보영상</title>
+      <link>https://layershop.kr/Brand/video</link>
+      <guid isPermaLink="true">https://layershop.kr/Brand/video</guid>
+      <description><![CDATA[서대전역 생활권과 도시철도 2호선(트램) 예정, 유등천·생활 인프라의 가치를 영상으로 안내합니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>인터넷청약</title>
-            <link>https://layershop.kr/SalesInfo/guide</link>
-            <description>대전 엘크루 베네치아 아파트의 인터넷 청약을 쉽게 안내해드려
-            고객님의 성공적인 분양을 도와줍니다 </description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>체크포인트</title>
-            <link>https://layershop.kr/SalesInfo/SubscriptionGuide</link>
-            <description>대전 엘크루 베네치아 아파트의 청약체크포인트를 확인하여 성공적인 분양을 지원합니다 </description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>모집공고안내</title>
-            <link>https://layershop.kr/SalesInfo/announcement</link>
-            <description>대전 엘크루 베네치아 아파트의 모집공고를 제공하며 성공적인 분양을 지원합니다 </description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>사업 안내</title>
+      <link>https://layershop.kr/BusinessGuide/intro</link>
+      <guid isPermaLink="true">https://layershop.kr/BusinessGuide/intro</guid>
+      <description><![CDATA[대전광역시 중구 유천동 도심 입지에 조성되는 신축 단지의 기본 개요를 확인하실 수 있습니다. (지하 4층~지상 40층, 2개 동, 총 301세대 / 전용 47㎡·84㎡ A/B)]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>인지세납부안내</title>
-            <link>https://layershop.kr/SalesInfo/stampTax</link>
-            <description>대전 엘크루 베네치아 아파트의 인지세납부정보를 제공하며 성공적인 분양을 지원합니다 </description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>분양 일정</title>
+      <link>https://layershop.kr/BusinessGuide/plan</link>
+      <guid isPermaLink="true">https://layershop.kr/BusinessGuide/plan</guid>
+      <description><![CDATA[모델하우스 오픈, 청약(임차인) 접수, 당첨자 발표, 계약, 입주(예정) 등 일정을 안내합니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>프리미엄</title>
-            <link>https://layershop.kr//LocationEnvironment/intro</link>
-            <description>Be Premium 대전 엘크루 베네치아이 가져가야 할 핵심가치와 함께 본연의 고귀한 삶을 영위할 수 있도록 해주는 프리미엄 상품입니다.</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>커뮤니티</title>
-            <link>https://layershop.kr/LocationEnvironment/community</link>
-            <description>가족과 이웃, 자연이 함께 어우러진 다채로운 삶이 대우조선건설에 있습니다 
-            Greenery Lounge 가족과 이웃, 자연과 단지가 함께 어우러지며
-            라이프스타일이 돋보이는 대전 엘크루 베네치아의 주민편의 시설을 의미합니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>청약 방법 안내</title>
+      <link>https://layershop.kr/SalesInfo/SubscriptionGuide</link>
+      <guid isPermaLink="true">https://layershop.kr/SalesInfo/SubscriptionGuide</guid>
+      <description><![CDATA[온라인 청약(임차인 모집) 절차와 유의사항, 자주 묻는 질문을 정리했습니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>동호수배치도</title>
-            <link>https://layershop.kr/ComplexGuide/intro</link>
-            <description>대전 엘크루 베네치아의 호수 배치도 안내란입니다.</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>청약 안내문</title>
+      <link>https://layershop.kr/SalesInfo/guide</link>
+      <guid isPermaLink="true">https://layershop.kr/SalesInfo/guide</guid>
+      <description><![CDATA[청약(임차인) 자격, 신청 방법, 제출 서류 및 일정에 관한 상세 안내입니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>59A</title>
-            <link>https://layershop.kr/FloorPlan/59A</link>
-            <description>대전 엘크루 베네치아의 59A타입의 평면도 안내란입니다.</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>59B</title>
-            <link>https://layershop.kr/FloorPlan/59B</link>
-            <description>대전 엘크루 베네치아의 59B타입의 평면도 안내란입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>84A</title>
-            <link>https://layershop.kr//FloorPlan/84A</link>
-            <description>대전 엘크루 베네치아의 84타입의 평면도 안내란입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>84B</title>
-            <link>https://layershop.kr/FloorPlan/84B</link>
-            <description>대전 엘크루 베네치아의 84B타입의 평면도 안내란입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>119A</title>
-            <link>https://layershop.kr/FloorPlan/114A</link>
-            <description>대전 엘크루 베네치아의 119A타입의 평면도 안내란입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>모집공고 안내</title>
+      <link>https://layershop.kr/SalesInfo/announcement</link>
+      <guid isPermaLink="true">https://layershop.kr/SalesInfo/announcement</guid>
+      <description><![CDATA[공급 규모, 전용면적, 자격 요건, 접수·계약 일정 등 공식 모집공고 게재 시 확인하실 수 있습니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>119B</title>
-            <link>https://layershop.kr/FloorPlan/114B</link>
-            <description>대전 엘크루 베네치아의 119B타입의 평면도 안내란입니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-        <item>
-            <title>84A</title>
-            <link>https://layershop.kr/Interior/59A</link>
-            <description>대전 엘크루 베네치아의 84A타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>인지세 납부 안내</title>
+      <link>https://layershop.kr/SalesInfo/stampTax</link>
+      <guid isPermaLink="true">https://layershop.kr/SalesInfo/stampTax</guid>
+      <description><![CDATA[계약 시 인지세 납부 기준과 금액, 전자수입인지(온라인) 구매·납부 절차를 간단히 안내합니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-         <item>
-            <title>119A</title>
-            <link>https://layershop.kr/Interior/84A</link>
-            <description>대전 엘크루 베네치아의 119A타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
+    <item>
+      <title>입지 환경</title>
+      <link>https://layershop.kr/LocationEnvironment/intro</link>
+      <guid isPermaLink="true">https://layershop.kr/LocationEnvironment/intro</guid>
+      <description><![CDATA[KTX 서대전역 생활권과 트램(2호선) 유천역(예정), 유등천 수변과 생활·의료·쇼핑 인프라를 갖춘 입지 특성을 소개합니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
 
-        <item>
-            <title>119B</title>
-            <link>https://layershop.kr/Interior/84B</link>
-            <description>대전 엘크루 베네치아의 119B타입의 인테리어정보를 제공하여 고객님들의 성공적인 분양을 도와드립니다</description>
-            <pubDate>Sat, 30 Nov 2024 14:30:00 KST</pubDate>
-        </item>
-    </channel>
+    <item>
+      <title>프리미엄</title>
+      <link>https://layershop.kr/LocationEnvironment/premium</link>
+      <guid isPermaLink="true">https://layershop.kr/LocationEnvironment/premium</guid>
+      <description><![CDATA[교통(서대전역·트램 예정), 교육, 쇼핑, 공원 등 생활 전반의 편의 요소를 종합적으로 안내합니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>단지 배치도</title>
+      <link>https://layershop.kr/ComplexGuide/intro</link>
+      <guid isPermaLink="true">https://layershop.kr/ComplexGuide/intro</guid>
+      <description><![CDATA[2개 동·301세대의 단지 배치, 조경, 보행 동선 계획을 확인하실 수 있습니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>동·호수 배치</title>
+      <link>https://layershop.kr/ComplexGuide/detailintro</link>
+      <guid isPermaLink="true">https://layershop.kr/ComplexGuide/detailintro</guid>
+      <description><![CDATA[동·호수(라인) 배치 정보를 제공하여 채광과 조망 확인에 도움을 드립니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>커뮤니티</title>
+      <link>https://layershop.kr/ComplexGuide/community</link>
+      <guid isPermaLink="true">https://layershop.kr/ComplexGuide/community</guid>
+      <description><![CDATA[피트니스·GX, 골프연습장, 라운지, 독서 공간 등 커뮤니티 시설 구성과 이용 안내입니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <!-- 평면 정보: 전용 47㎡ / 84㎡A / 84㎡B -->
+    <item>
+      <title>47</title>
+      <link>https://layershop.kr/FloorPlan/47</link>
+      <guid isPermaLink="true">https://layershop.kr/FloorPlan/47</guid>
+      <description><![CDATA[전용 47㎡ 타입의 실용적 평면 구성과 수납·동선 계획을 소개합니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>84A</title>
+      <link>https://layershop.kr/FloorPlan/84A</link>
+      <guid isPermaLink="true">https://layershop.kr/FloorPlan/84A</guid>
+      <description><![CDATA[전용 84A 타입의 평면 정보와 공간 활용 포인트를 확인하세요.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>84B</title>
+      <link>https://layershop.kr/FloorPlan/84B</link>
+      <guid isPermaLink="true">https://layershop.kr/FloorPlan/84B</guid>
+      <description><![CDATA[전용 84B 타입의 평면 정보와 공간 활용 포인트를 확인하세요.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>E-모델하우스</title>
+      <link>https://layershop.kr/FloorPlan/Emodel</link>
+      <guid isPermaLink="true">https://layershop.kr/FloorPlan/Emodel</guid>
+      <description><![CDATA[온라인으로 단지와 평면, 인테리어를 사전 체험하실 수 있습니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>인테리어</title>
+      <link>https://layershop.kr/Interior/84A</link>
+      <guid isPermaLink="true">https://layershop.kr/Interior/84A</guid>
+      <description><![CDATA[타입별 인테리어 콘셉트와 마감·옵션 정보를 제공합니다. (예: 전용 84A)]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>언론보도</title>
+      <link>https://layershop.kr/press</link>
+      <guid isPermaLink="true">https://layershop.kr/press</guid>
+      <description><![CDATA[단지 관련 보도자료와 기사 모음입니다. 공식 발표 및 언론 게재 내용을 확인하세요.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+    <item>
+      <title>관심고객 등록</title>
+      <link>https://layershop.kr/Promotion/Customer</link>
+      <guid isPermaLink="true">https://layershop.kr/Promotion/Customer</guid>
+      <description><![CDATA[관심고객 등록 시 청약·모델하우스·일정 등 주요 안내를 우선 제공해 드립니다.]]></description>
+      <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
+    </item>
+
+  </channel>
 </rss>

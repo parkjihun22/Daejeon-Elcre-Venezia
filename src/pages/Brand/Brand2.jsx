@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-import YouTube from "react-youtube";
+import YouTube from 'react-youtube';
 
-import styles from "./Brand.module.scss";
+import styles from './Brand.module.scss';
 import Header from "../../components/Header/Header";
 import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
@@ -12,154 +12,102 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
 const Brand2 = () => {
-  const menuContents = [
-    { title: "브랜드 소개", url: "/brand/intro" },
-    { title: "홍보 영상", url: "/brand/video" },
-  ];
-  const [isScroll, setIsScroll] = useState(false);
-  const [isTextVisible, setIsTextVisible] = useState(true); // isTextVisible 상태 추가
-  const isMobile = useMediaQuery({ query: "(max-width: 900px)" });
-  const { pathname } = useLocation(); // 현재 경로를 가져옴
+	const menuContents = [
+		{ title: "브랜드 소개", url: "/brand/intro" }, 
+		{ title: "홍보 영상", url: "/brand/video" }];
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // 페이지가 로드될 때 스크롤을 최상단으로 이동
-  }, [pathname]); // pathname이 변경될 때마다 실행
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
-      }
-    };
+	const [isScroll, setIsScroll] = useState(false);
+	const [isTextVisible, setIsTextVisible] = useState(true); // isTextVisible 상태 추가
+	const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
+	const { pathname } = useLocation(); // 현재 경로를 가져옴
 
-    window.addEventListener("scroll", handleScroll);
+	useEffect(() => {
+		window.scrollTo(0, 0); // 페이지가 로드될 때 스크롤을 최상단으로 이동
+	}, [pathname]); // pathname이 변경될 때마다 실행
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 0) {
+				setIsScroll(true);
+			} else {
+				setIsScroll(false); 
+			}
+		};
 
-  return (
-    <div className={styles.container}>
-      <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
+		window.addEventListener('scroll', handleScroll);
 
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 홍보영상</title>
-        <meta
-          name="description"
-          content="최첨단 영상 기술과 감성적 스토리텔링이 어우러진 홍보영상으로, 브랜드의 미래 비전과 핵심 가치를 생생하게 전달합니다. 창의적 연출이 고객의 마음을 사로잡아 잊지 못할 경험을 선사합니다. 혁신적 비주얼과 감동 스토리로 모두를 사로잡습니다."
-        />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link rel="canonical" href="https://layershop.kr/Brand/video" />
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta property="og:title" content="대전 엘크루 베네치아 - 홍보영상" />
-        <meta
-          property="og:description"
-          content="최첨단 영상 기술과 감성적 스토리텔링이 어우러진 홍보영상으로, 브랜드의 미래 비전과 핵심 가치를 생생하게 전달합니다. 창의적 연출이 고객의 마음을 사로잡아 잊지 못할 경험을 선사합니다. 혁신적 비주얼과 감동 스토리로 모두를 사로잡습니다."
-        />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/Brand/video"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
+	return (
+		<div className={styles.container}>
+			<Helmet>
+			<title>대전 유천 벽산블루밍 - 홍보영상</title>
+			<meta
+				name="description"
+				content="대전 유천 벽산블루밍 홍보영상에서 단지 설계와 커뮤니티, 서대전역 생활권과 도시철도 2호선(트램) 예정, 유등천 수변 등 풍부한 인프라를 생생히 확인하세요."
+			/>
+			<link rel="canonical" href="https://layershop.kr/Brand/video" />
+			<meta name="robots" content="index,follow" />
 
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 홍보영상"
-        />
-        <meta
-          name="twitter:description"
-          content="최첨단 영상 기술과 감성적 스토리텔링이 어우러진 홍보영상으로, 브랜드의 미래 비전과 핵심 가치를 생생하게 전달합니다. 창의적 연출이 고객의 마음을 사로잡아 잊지 못할 경험을 선사합니다. 혁신적 비주얼과 감동 스토리로 모두를 사로잡습니다."
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/Brand/video"
-        />
+			{/* OG 태그 */}
+			<meta property="og:type" content="website" />
+			<meta property="og:site_name" content="대전 유천 벽산블루밍" />
+			<meta property="og:title" content="대전 유천 벽산블루밍 - 홍보영상" />
+			<meta property="og:description" content="대전 유천 벽산블루밍 홍보영상으로 초고층 신축의 품격, 서대전역·트램(2호선) 예정, 유등천과 생활·의료·쇼핑 인프라까지 한눈에 만나보세요." />
+			<meta property="og:url" content="https://layershop.kr/Brand/video" />
+			<meta property="og:image" content="https://layershop.kr/images/og/main.jpg" />
 
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-															{
-																"@context": "https://schema.org",
-																"@type": "WebPage",
-																"name": "대전 엘크루 베네치아 - 홍보영상",
-																"description": "최첨단 영상 기술과 감성적 스토리텔링이 어우러진 홍보영상으로, 브랜드의 미래 비전과 핵심 가치를 생생하게 전달합니다. 창의적 연출이 고객의 마음을 사로잡아 잊지 못할 경험을 선사합니다. 혁신적 비주얼과 감동 스토리로 모두를 사로잡습니다.",
-																"url": "https://layershop.kr/Brand/video"
-															}
-															`}
-        </script>
-      </Helmet>
+			{/* Twitter */}
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:title" content="대전 유천 벽산블루밍 - 홍보영상" />
+			<meta name="twitter:description" content="대전 유천 벽산블루밍 홍보영상에서 단지의 매력적인 디자인과 커뮤니티, 서대전역·트램(2호선) 예정 등 입지 프리미엄을 확인하세요." />
+			<meta name="twitter:image" content="https://layershop.kr/images/og/main.jpg" />
+			</Helmet>
+			
+			
+			<Header isChanged={isScroll} />
+			<FixIcon />
 
-      <Header isChanged={isScroll} />
-      <FixIcon />
+			<Bener title="홍보영상" />
 
-      <Bener title="홍보영상" />
+			<MenuBar contents={menuContents} />
 
-      <MenuBar contents={menuContents} />
-      {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-      <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 홍보영상
-      </h1>
-      <p className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아의 홍보 영상은 이 프로젝트의 주요 특징과 장점을
-        시각적으로 잘 전달하는 매체입니다. 고품질의 영상으로 이 단지의 설계,
-        입지, 편의 시설 등 다양한 요소를 소개하며, 분양을 고민하는 고객들에게
-        유익한 정보를 제공합니다. 영상 시청을 통해 대전 엘크루 베네치아의 매력을
-        더 깊이 이해할 수 있습니다.
-      </p>
+						{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+						<h1 className={styles.screenReaderOnly}>대전 유천 벽산블루밍 - 홍보영상</h1>
+						<p className={styles.screenReaderOnly}>대전 유천 벽산블루밍의 홍보영상을 통해 단지의 설계와 커뮤니티, 서대전역 생활권과 도시철도 2호선(트램) 예정, 유등천 수변 등 풍부한 인프라를 생생하게 확인하세요.
+						</p>	
 
-      <div
-        className={`${styles.textBox} ${isTextVisible ? styles.active : ""}`}
-      >
-        <div>대전 엘크루 베네치아이 눈부신 가치 위에</div>
-        <div>새로운 자부심으로 찾아옵니다.</div>
-      </div>
+			<div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
+                <div>대전 유천 벽산블루밍이 눈부신 가치 위에</div>
+                <div>새로운 자부심으로 찾아옵니다.</div>
+            </div>
 
-      <div className={styles.videoContainer}>
-        <YouTube
-          videoId="sbPmxnbTt08"
-          opts={{
-            width: isMobile ? "400" : "1300",
-            height: isMobile ? "300" : "500",
-            playerVars: {
-              autoplay: 1,
-              rel: 0,
-              modestbranding: 1,
-            },
-          }}
-          onEnd={(e) => {
-            e.target.stopVideo(0); // 비디오 종료 시 정지
-          }}
-        />
-      </div>
 
-      <Footer />
-    </div>
-  );
-};
+			<div className={styles.videoContainer}>
+				<YouTube
+					videoId=""
+					opts={{
+						width: isMobile ? "400" : "1300",
+						height: isMobile ? "300" : "500",
+						playerVars: {
+							autoplay: 1,
+							rel: 0,
+							modestbranding: 1,
+						},
+					}}
+					onEnd={(e) => {
+						e.target.stopVideo(0);  // 비디오 종료 시 정지
+					}}
+				/>
+			</div>
+
+			<Footer />
+		</div>
+	)
+}
 
 export default Brand2;

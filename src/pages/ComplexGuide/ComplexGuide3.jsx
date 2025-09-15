@@ -8,13 +8,16 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
+
 import page1 from "../../assets/ComplexGuide/ComplexGuide3/page1.jpg";
+
+
 
 const ComplexGuide3 = () => {
   const menuContents = [
     { title: "단지 배치도", url: "/ComplexGuide/intro" },
     { title: "호수 배치도", url: "/ComplexGuide/detailintro" },
-    { title: "특화 시스템", url: "/ComplexGuide/community" },
+    { title: "커뮤니티", url: "/ComplexGuide/community" },
   ];
   const [isScroll, setIsScroll] = useState(false);
   const [isImage2Loaded, setIsImage2Loaded] = useState(false); // 이미지 로딩 상태 추가
@@ -48,81 +51,26 @@ const ComplexGuide3 = () => {
   return (
     <div className={styles.container}>
       <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
-
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 커뮤니티</title>
+        <title>대전 유천 벽산블루밍 - 커뮤니티</title>
         <meta
           name="description"
-          content="대전 엘크루 베네치아의 커뮤니티 페이지에서는 단지 내 다양한 커뮤니티 시설을 소개합니다. 헬스장, 독서실, 카페 등 주민들의 편리한 생활을 위한 다양한 시설들이 준비되어 있습니다. 이러한 시설들이 입주민들의 삶의 질을 높이고, 더 나은 공동체 생활을 만들어주는 역할을 합니다."
+          content="대전 유천 벽산블루밍의 커뮤니티 시설을 소개합니다. 피트니스센터, GX룸, 골프연습장, 독서실·작은도서관, 어린이놀이시설, 라운지 등 다양한 편의시설로 생활의 품격을 높여드립니다."
         />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link
-          rel="canonical"
-          href="https://layershop.kr/ComplexGuide/community"
-        />
+        <link rel="canonical" href="https://layershop.kr/ComplexGuide/community" />
+        <meta name="robots" content="index,follow" />
 
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta
-          property="og:title"
-          content="대전 엘크루 베네치아 - 커뮤니티"
-        />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="대전 유천 벽산블루밍" />
+        <meta property="og:title" content="대전 유천 벽산블루밍 - 커뮤니티" />
         <meta
           property="og:description"
-          content="대전 엘크루 베네치아의 커뮤니티 페이지에서는 단지 내 다양한 커뮤니티 시설을 소개합니다. 헬스장, 독서실, 카페 등 주민들의 편리한 생활을 위한 다양한 시설들이 준비되어 있습니다. 이러한 시설들이 입주민들의 삶의 질을 높이고, 더 나은 공동체 생활을 만들어주는 역할을 합니다."
+          content="대전 유천 벽산블루밍 커뮤니티: 피트니스·GX, 골프연습장, 독서실·작은도서관, 어린이놀이시설, 라운지 등 다양한 편의시설 안내."
         />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/ComplexGuide/community"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
-
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 커뮤니티"
-        />
-        <meta
-          name="twitter:description"
-          content="대전 엘크루 베네치아의 커뮤니티 페이지에서는 단지 내 다양한 커뮤니티 시설을 소개합니다. 헬스장, 독서실, 카페 등 주민들의 편리한 생활을 위한 다양한 시설들이 준비되어 있습니다. 이러한 시설들이 입주민들의 삶의 질을 높이고, 더 나은 공동체 생활을 만들어주는 역할을 합니다."
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/ComplexGuide/community"
-        />
-
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-					{
-			"@context": "https://schema.org",
-			"@type": "WebPage",
-			"name": "대전 엘크루 베네치아 - 커뮤니티",
-			"description": "대전 엘크루 베네치아의 커뮤니티 페이지에서는 단지 내 다양한 커뮤니티 시설을 소개합니다. 헬스장, 독서실, 카페 등 주민들의 편리한 생활을 위한 다양한 시설들이 준비되어 있습니다. 이러한 시설들이 입주민들의 삶의 질을 높이고, 더 나은 공동체 생활을 만들어주는 역할을 합니다.",
-			"url": "https://layershop.kr/ComplexGuide/community"
-					}
-					`}
-        </script>
+        <meta property="og:url" content="https://layershop.kr/ComplexGuide/community" />
+        <meta property="og:image" content="https://layershop.kr/img/og/complex.jpg" />
       </Helmet>
+
 
       <Header isChanged={isScroll} />
       <FixIcon />
@@ -130,29 +78,29 @@ const ComplexGuide3 = () => {
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 커뮤니티
+        대전 유천 벽산블루밍 - 커뮤니티
       </h1>
       <p className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아의 커뮤니티 페이지에서는 단지 내 다양한 커뮤니티
-        시설을 소개합니다. 헬스장, 독서실, 카페 등 주민들의 편리한 생활을 위한
-        다양한 시설들이 준비되어 있습니다. 이러한 시설들이 입주민들의 삶의 질을
-        높이고, 더 나은 공동체 생활을 만들어주는 역할을 합니다.
+        대전 유천 벽산블루밍의 커뮤니티 페이지에서는 단지 내 다양한 생활 편의시설을 소개합니다.
+        피트니스센터와 GX룸, 실내 골프연습장, 독서실·작은도서관, 어린이놀이시설, 입주민 라운지 등
+        일상의 편의를 높여 주는 시설들을 통해 더 나은 공동체 생활과 주거 만족도를 제공합니다.
       </p>
 
       <div className={styles.textBox}>
-        <div>대전 엘크루 베네치아이 눈부신 가치 위에</div>
+        <div>대전 유천 벽산블루밍이 눈부신 가치 위에</div>
         <div>새로운 자부심으로 찾아옵니다.</div>
       </div>
 
+
       {/* 이미지에 애니메이션 효과 추가 */}
       <img
-        className={`${styles.image2} ${
-          isImage2Loaded ? styles.showImage2 : ""
-        }`}
-        src={page1}
-        alt="대전 엘크루 베네치아 커뮤니티안내-image1"
-        onLoad={handleImageLoad} // 이미지 로드 후 애니메이션 실행
-      />
+				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
+				src={page1}
+				alt="대전 유천 벽산블루밍 커뮤니티 안내 -image1"
+				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
+			/>
+
+
 
       <Footer />
     </div>

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async"; // SEO 메타 태그 추가를 위한 Helmet 임포트
 
 // PC, 모바일 전용 CSS 모듈 (Main.module.scss 안에 모든 스타일을 넣은 경우)
 import styles from "./Main.module.scss";
-import { Helmet } from "react-helmet-async"; // SEO 메타 태그 추가를 위한 Helmet 임포트
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -13,9 +13,13 @@ import UnitplanBox from "../../components/UnitplanBox/UnitplanBox";
 import MobilePopup from "../../components/MobilePopup/MobilePopup";
 import Popup from "../../components/Popup/Popup";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
+import MobileOverviewSection from "../../components/MobileOverviewSection/MobileOverviewSection";
+import DarkComplexSection from "../../components/DarkComplexSection/DarkComplexSection";
 import InterestPopup from "../../components/InterestPopup/InterestPopup"; // 새 팝업 컴포넌트 import
-// import UrlContainer from "../../components/UrlContainer/UrlContainer";
-
+// import UrlContainer from "../../components/UrlContainer/UrlContainer";\
+import UnitInfoSection from "../../components/UnitInfoSection/UnitInfoSection";
+import MobileNewsSection from "../../components/MobileNewsSection/MobileNewsSection";
+import newsLists from "../../NewsList"
 
 import mainImage from "../../assets/Main/Main1.jpg";
 import section1_Image1 from "../../assets/Main/section1-img1.jpg";
@@ -47,40 +51,43 @@ const section3Contents = [
   {
     imgSrc: section3_Image1,
     title: "PREMIUM 01",
-    text1: `분양 전환 우선권 부여여`,
-    text2: `10년동안 생활하고<br />
-            선택할 수 있는 기회<br /> 이사걱정 제로`,
+    text1: `2개 동·301세대 신축 단지`,
+    text2: `대전 중구 유천동 도심 입지<br/>
+            KTX 서대전역 인접·트램(2호선) 유천역 예정`,
     link: "/BusinessGuide/intro",
     linkText: "더 알아보기 >",
   },
   {
     imgSrc: section3_Image2,
     title: "PREMIUM 02",
-    text1: `안심학세권, 핵심인프라 라이프`,
-    text2: `버드내 초등학교 300m위치<br />
-           반경 2km내 초교7개소, 중학교 등 인프라중심`,
+    text1: `광역 교통망 확장`,
+    text2: `KTX 서대전역·대전~세종 BRT<br/>
+            충청권 광역철도(예정) 등 네트워크 수혜`,
     link: "/LocationEnvironment/intro",
     linkText: "더 알아보기 >",
   },
   {
     imgSrc: section3_Image3,
     title: "PREMIUM 03",
-    text1: `대전을 잇는 사통팔달 광역교통망`,
-    text2: `유천역(예정) 초역세권 프리미엄<br />
-           대전역 CTX(예정) 및 <br /> 도시 광역교통 입지 `,
+    text1: `교육·생활 인프라 집약`,
+    text2: `초·중·고 밀집·둔산 학원가 접근<br/>
+            코스트코·홈플러스·백화점·유천시장 원스톱`,
     link: "/LocationEnvironment/intro",
     linkText: "더 알아보기 >",
   },
   {
     imgSrc: section3_Image4,
     title: "PREMIUM 04",
-    text1: `취득세/종부세/양도세`,
-    text2: `입주시 0원으로<br />
-            내집마련의 기회`,
-    link: "/LocationEnvironment/primium",
+    text1: `쾌적한 주거환경`,
+    text2: `유등천 수변·체육공원 인접<br/>
+            조경 특화 설계로 힐링 라이프`,
+    link: "/LocationEnvironment/premium",
     linkText: "더 알아보기 >",
   },
 ];
+
+
+
 
 const Main = () => {
   // 기존 상태 변수들
@@ -94,11 +101,12 @@ const Main = () => {
   const [isInterestPopupOpen, setIsInterestPopupOpen] = useState(false); // 방문예약 팝업 상태
   const isMobile = useMediaQuery({ query: "(max-width: 900px)" });
 
-  // 관심고객 등록 폼 상태 관리 (방문일자 필드 포함)
+  // 관심고객 등록 폼 상태 관리 (생년월일, 거주지역 필드 추가)
   const [registration, setRegistration] = useState({
     name: "",
     phone: "",
-    message: "",
+    birthday: "",
+    residence: "",
   });
 
   const handleInputChange = (e) => {
@@ -137,7 +145,7 @@ const Main = () => {
       if (isScrolling) return;
       setIsScrolling(true);
       if (e.deltaY > 0) {
-        if (page < 8) {
+        if (page < 8.5) {
           setPage((prevPage) => prevPage + 1);
         }
       } else {
@@ -163,7 +171,8 @@ const Main = () => {
   }, [page, isMobile]);
 
   return (
-    <>  
+    <>
+
       {!isMobile ? (
         // PC 버전
         <>
@@ -190,20 +199,27 @@ const Main = () => {
             />
           )} */}
 
-          <div className={styles.imageContainer}>
-            <img src={mainImage} className={styles.mainImage} alt="대전 엘크루 베네치아-mainimage1" />
+<div className={styles.imageContainer}>
+            <img
+              src={mainImage}
+              className={styles.mainImage}
+              alt="대전 유천 벽산블루밍-mainimage1"
+            />
             <div className={styles.overlay}></div>
             <div className={styles.mainImageTextBox}>
-              <div className={styles.mainImageTextSub}>
-                분양전환 우선권부여 <span className={styles.greyText}>착한조건</span> | 부담을 덜어주는 <span className={styles.greyText}>착한 옵션</span> | 보증금 선택제로 <span className={styles.greyText}>저렴한 임대료</span>
+            <div className={styles.mainImageTextSub}>
+              도심권 신축 벽산블루밍{" "}
+              <span className={styles.greyText}>브랜드 프리미엄</span>
+            </div>
+            <div className={styles.mainImageTitleBox}>
+              <div className={styles.mainImageText}>유천이 기다린 새로운 주거 프리미엄</div>
+              <div className={styles.mainImageLine}></div>
+              <div className={styles.mainImageText}>
+                대전 유천 벽산블루밍
               </div>
-              <div className={styles.mainImageTitleBox}>
-                <div className={styles.mainImageText}>대전이 기다린 가장 착한 아파트</div>
-                <div className={styles.mainImageLine}></div>
-                <div className={styles.mainImageText}>대전 엘크루 베네치아</div>
-              </div>
-              {/* 기존 관심고객 등록 링크 대신 방문예약 버튼 클릭 시 팝업 오픈 */}
-              <div>
+
+
+
                 <button
                   onClick={() => setIsInterestPopupOpen(true)}
                   className={styles.subPinkBtn}
@@ -211,7 +227,7 @@ const Main = () => {
                   <img
                     src={subpinkimg}
                     className={styles.subPinkImg}
-                    alt="대전 엘크루 베네치아 관심고객등록"
+                    alt="대전 유천 벽산블루밍 관심고객등록"
                   />
                 </button>
               </div>
@@ -224,22 +240,33 @@ const Main = () => {
               <div className={styles.textBox}>
                 <div className={styles.text1}>Location</div>
                 <div className={styles.text2}>
-                  " 방문 예약 고객 전원 스타벅스 기프티콘 100% 증정 "
-                </div>
-                <div className={styles.text3}>
-                  - 대우조선건설의 대표 주거 브랜드 '엘크루'에서 선보이는 시그니처 라이프 <br />
-                  - 대청종합병원 도보 5분 <br />
-                  - 대전 제1·2산업단지 및 벤처협동화 단지 인접 유천역(예정), 대전역 CTX(예정) <br />
-                  - 모두를 누리는 대전 엘크루 베네치아
-                </div>
+                    대전 유천 벽산블루밍 POINT
+                  </div>
+                  <div className={styles.text3}>
+                    - KTX 서대전역 생활권·도시철도 2호선(트램) 유천역 예정<br />
+                    - 초·중·고 밀집 학세권, 둔산 학원가 접근 우수<br />
+                    - 유등천 수변·체육공원 인접한 쾌적한 주거환경<br />
+                    - 코스트코·홈플러스·세이백화점·유천시장 등 생활·쇼핑 인프라 밀집<br />
+                    - 충남대병원·대전성모병원 등 대형 의료 인프라 가까움
+                  </div>
+
                 <div className={styles.text4}>
-                  <a href="https://naver.me/55rUFpYq" target="_black">
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsInterestPopupOpen(true);
+                    }}
+                  >
                     관심고객 등록하기 {">"}
                   </a>
                 </div>
               </div>
               <div className={styles.menuBox}>
-                <img src={section1_Image1} alt="대전 엘크루 베네치아브랜드소개-image2" />
+                <img
+                  src={section1_Image1}
+                  alt="대전 유천 벽산블루밍 브랜드소개-image2"
+                />
                 <Link to="/Brand/video" className={styles.btn}>
                   브랜드 소개 {">"}
                 </Link>
@@ -251,18 +278,26 @@ const Main = () => {
             <div className={styles.section8}>
               <div className={styles.textBox}>
                 <div className={styles.title}>
-                  소수만 누릴 수 있는<br />
-                  <span>착한가격의 아파트 <br />대전 엘크루 베네치아</span>
+                  소수만 누릴 수 있는
+                  <br />
+                  <span>
+                    최고의 브랜드 아파트 <br />
+                    대전 유천 벽산블루밍
+                  </span>
                 </div>
                 <div className={styles.subTitle}>
                   <div className={styles.textLine}></div>
                   <div className={styles.subText}>
-                    찬란한 비전에 완벽한 주거가치까지 더해<br />
-                    대전 엘크루 베네치아이 함께합니다
+                    찬란한 비전에 완벽한 주거가치까지 더해
+                    <br />
+                    대전 유천 벽산블루밍가 함께합니다
                   </div>
                 </div>
               </div>
-              <img src={section8Img3} alt="대전 엘크루 베네치아입지환경소개-image2" />
+              <img
+                src={section8Img3}
+                alt="대전 유천 벽산블루밍 입지환경소개-image2"
+              />
             </div>
           </div>
 
@@ -273,19 +308,30 @@ const Main = () => {
                   완벽한 생활에서 준비된 미래까지
                 </div>
                 <div className={`${styles.text2} fadeUpRepeat`}>
-                  기대한 모든 프리미엄이<br />대전 엘크루 베네치아에서 펼쳐집니다
+                  기대한 모든 프리미엄이
+                  <br />
+                  대전 유천 벽산블루밍에서 펼쳐집니다
                 </div>
                 <div className={`${styles.text3} fadeUpRepeat`}>
                   SPECIAL PLAN
                 </div>
                 <div className={`${styles.text4} fadeUpRepeat`}>
-                  살수록 자부심이 차원이 다른<br />프리미엄 주거라이프를 실현합니다
+                  살수록 자부심이 차원이 다른
+                  <br />
+                  프리미엄 주거라이프를 실현합니다
                 </div>
                 <div className={`${styles.text5} fadeUpRepeat`}>
-                  주거의 품격과 가치를 높이는 <span>특화설계</span><br />안전한 이동을 위한 세심한 <span>단지설계</span><br />편리한 생활을 위한 최적의 <span>공간설계</span>
+                  주거의 품격과 가치를 높이는 <span>특화설계</span>
+                  <br />
+                  안전한 이동을 위한 세심한 <span>단지설계</span>
+                  <br />
+                  편리한 생활을 위한 최적의 <span>공간설계</span>
                 </div>
               </div>
-              <img src={section2_Image1} alt="대전 엘크루 베네치아아파트 조감도-image3" />
+              <img
+                src={section2_Image1}
+                alt="대전 유천 벽산블루밍 아파트 조감도-image3"
+              />
             </div>
           </div>
 
@@ -295,8 +341,14 @@ const Main = () => {
                 <div key={index} className={styles.box}>
                   <img src={section.imgSrc} alt={section.title} />
                   <div className={styles.boxTitle}>{section.title}</div>
-                  <div className={styles.boxText1} dangerouslySetInnerHTML={{ __html: section.text1 }} />
-                  <div className={styles.boxText2} dangerouslySetInnerHTML={{ __html: section.text2 }} />
+                  <div
+                    className={styles.boxText1}
+                    dangerouslySetInnerHTML={{ __html: section.text1 }}
+                  />
+                  <div
+                    className={styles.boxText2}
+                    dangerouslySetInnerHTML={{ __html: section.text2 }}
+                  />
                   <Link to={section.link} className={styles.boxText3}>
                     {section.linkText}
                   </Link>
@@ -308,103 +360,110 @@ const Main = () => {
           <div className={styles.section}>
             <div className={styles.section4}>
               <div className={styles.imageBox}>
-                <img src={section4_Image1} alt="대전 엘크루 베네치아브랜드소개-image4" />
-                <div className={styles.text1}>대전 엘크루 베네치아</div>
+                <img
+                  src={section4_Image1}
+                  alt="대전 유천 벽산블루밍 브랜드소개-image4"
+                />
+                <div className={styles.text1}>대전 유천 벽산블루밍</div>
                 <div className={styles.text2}>THE NATURAL NOBILITY</div>
-                <div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
+                <div className={styles.text3}>
+                  당신의 삶, 그 고귀함이 계속되길
+                </div>
               </div>
               <div className={styles.textBox}>
                 <div className={styles.text1}>UNITPLAN</div>
                 <UnitplanBox />
-                <Link to="/FloorPlan/84A" className={styles.text2}>더 알아보기 {">"}</Link>
+                <Link to="/FloorPlan/84A" className={styles.text2}>
+                  더 알아보기 {">"}
+                </Link>
               </div>
             </div>
           </div>
+          <div id="interestForm" className={styles.section}></div>
 
           {/* ================== 방문예약 섹션 (PC) ================== */}
-<div className={styles.pcVisitContainer}>
-  {/* 상단 타이틀 영역 (좌: 제목/부제, 우: 안내문구) */}
-  <div className={styles.pcTitleRow}>
-    <div className={styles.leftTitle}>
-      <h2>대전 엘크루 베네치아</h2>
-      <p>방문예약</p>
-    </div>
-    <div className={styles.rightText}>
-      방문예약 등록 시 모델하우스 주소 SMS발송 및
-      <br />
-      잔여세대를 안내드립니다.
-    </div>
-  </div>
+          <div className={styles.pcVisitContainer}>
+            {/* 상단 타이틀 영역 (좌: 제목/부제, 우: 안내문구) */}
+            <div className={styles.pcTitleRow}>
+              <div className={styles.leftTitle}>
+                <h2>대전 유천 벽산블루밍</h2>
+                <p>방문예약</p>
+              </div>
+              <div className={styles.rightText}>
+                방문예약 등록 시 모델하우스 주소 SMS발송 및
+                <br />
+                잔여세대를 안내드립니다.
+              </div>
+            </div>
 
-  {/* 입력 폼 */}
-  <form
-    className={styles.pcVisitForm}
-    action="https://formspree.io/f/movdypjp"
-    method="POST"
-  >
-    <label htmlFor="name">
-      고객명 <span className={styles.redStar}>*</span>
-    </label>
-    <input
-      type="text"
-      name="name"
-      placeholder="고객명"
-      value={registration.name}
-      onChange={handleInputChange}
-      required
-    />
+            {/* 입력 폼 */}
+            <form
+              className={styles.pcVisitForm}
+              action="https://formspree.io/f/movdypjp"
+              method="POST"
+            >
+              <label htmlFor="name">
+                고객명 <span className={styles.redStar}>*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="고객명"
+                value={registration.name}
+                onChange={handleInputChange}
+                required
+              />
 
-    <label htmlFor="phone">
-      연락처 <span className={styles.redStar}>*</span>
-    </label>
-    <input
-      type="tel"
-      name="phone"
-      placeholder="010-0000-0000"
-      value={registration.phone}
-      onChange={handleInputChange}
-      required
-    />
+              <label htmlFor="phone">
+                연락처 <span className={styles.redStar}>*</span>
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="010-0000-0000"
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
+              <label htmlFor="message">
+                문의 내용
+              </label>
+              <textarea
+                name="message"
+                placeholder="문의 내용이 있을 경우 이곳에 남겨주세요."
+                value={registration.message}
+                onChange={handleInputChange}
+                rows={5}
+              />
 
-    <label htmlFor="message">
-      문의 내용
-    </label>
-    <textarea
-      name="message"
-      placeholder="문의 내용이 있을 경우 이곳에 남겨주세요."
-      value={registration.message}
-      onChange={handleInputChange}
-      rows={5}
-    />
-
-    <button type="submit">등록하기</button>
-  </form>
-</div>
+              <button type="submit">등록하기</button>
+            </form>
+          </div>
 
           {/* <div className={styles.section}>
             <div className={styles.section9}>
               <div className={styles.textBox}>
                 <div className={styles.title}>
-                  대전 엘크루 베네치아<br />
+                  대전 유천 벽산블루밍
+                  <br />
                   <span>견본주택 오시는길</span>
                 </div>
                 <div className={styles.subTitle}>
                   <div className={styles.textLine}></div>
                   <div className={styles.subText}>
-                    찬란한 비전에 완벽한 주거가치까지 더해<br />
-                    대전 엘크루 베네치아이 함께합니다
+                    찬란한 비전에 완벽한 주거가치까지 더해
+                    <br />
+                    대전 유천 벽산블루밍가 함께합니다
                   </div>
                 </div>
               </div>
-              <img src={map1} alt="대전 엘크루 베네치아오시는길안내-image1" />
+              <img src={map1} alt="대전 유천 벽산블루밍 오시는길안내-image1" />
             </div>
           </div> */}
 
           <div className={styles.section5}>
-
             <Footer />
           </div>
-
           {/* 방문예약 팝업 (PC) */}
           {isInterestPopupOpen && (
             <InterestPopup
@@ -449,57 +508,94 @@ const Main = () => {
           <Header isChanged={isScroll} />
 
           <div className={styles.imageContainer}>
-            <img src={mobileImageMain} className={styles.mainImage} alt="대전 엘크루 베네치아mobilemain-image1" />
+            <img
+              src={mobileImageMain}
+              className={styles.mainImage}
+              alt="송도한신더휴 mobilemain-image1"
+            />
             <div className={styles.overlay}></div>
             <div className={styles.mainImageTextBox1}>
-              <div className={styles.mainImageTextSub1}>
-                분양전환 우선권 부여<br />
-                <span className={styles.greyText}>파격조건</span><br />
-                가전 풀옵션 선착순혜택<br />
-                <span className={styles.greyText}>착한 옵션</span><br />
-                보증금 선택제로 <br />
-                <span className={styles.greyText}>저렴한 임대료</span>
+            <div className={styles.mainImageTextSub1}>
+              유천의 새로운 시작, 높은 미래가치<br/>
+              도심권 신축 벽산블루밍
+              <br />
+              <span className={styles.greyText1}>브랜드 프리미엄</span>
+              <br />
+            </div>
+            <div className={styles.mainImageTitleBox1}>
+              <div className={styles.mainImageText1}>
+                대전 유천 벽산블루밍
               </div>
-              <div className={styles.mainImageTitleBox1}>
-                <div className={styles.mainImageText1}>대전이 기다린<br /> 가장 착한 아파트</div>
-                <div className={styles.mainImageText5}>대전 엘크루 베네치아</div>
+
               </div>
             </div>
           </div>
+
+
+
 
           <div className={styles.container1}>
             <div className={styles.text1}>Location</div>
             <div className={styles.text2}>
-              "방문예약을 하시면 신세계 상품권 100% 증정 "
-            </div>
-            <div className={styles.text3}>
-                  - 대우조선건설의 대표 주거 브랜드 '엘크루'에서 선보이는 시그니처 라이프 <br />
-                  - 대청종합병원 도보 5분 <br />
-                  - 대전 제1·2산업단지 및 벤처협동화 단지 인접 유천역(예정), 대전역 CTX(예정) <br />
-                  - 모두를 누리는 대전 엘크루 베네치아
-            </div>
+                대전 유천 벽산블루밍 POINT
+              </div>
+              <div className={styles.text3}>
+                - KTX 서대전역 생활권 · 도시철도 2호선(트램) 유천역 예정<br />
+                - 초·중·고 밀집 학세권, 둔산 학원가 접근 우수<br />
+                - 대전~세종 BRT · 충청권 광역철도(예정) 등 광역 교통망 수혜<br />
+                - 유등천 수변 · 체육공원 인접한 쾌적한 주거환경<br />
+                - 코스트코 · 홈플러스 · 세이백화점 · 유천시장 등 생활·문화 인프라 밀집
+              </div>
+
             <div className={styles.text4}>
-              <a href="https://naver.me/55rUFpYq" target="_black">
+              {/* 외부 링크 대신 방문예약 클릭 시 팝업 호출 */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsInterestPopupOpen(true);
+                }}
+                className={styles.popupBtn}
+              >
                 관심고객 등록하기 {">"}
               </a>
             </div>
           </div>
+          <MobileOverviewSection />
+          {/* ─── 2.5. 중간에 풀-스크린 이미지 섹션 ───
+         <div className={styles.mobileMiddleImage}>
+           <img
+             src={require("../../assets/Bener/event.jpg")}
+            alt="단지 전경 추가 이미지"
+             className={styles.middleImage}
+           />
+         </div> */}
+
+          {/* ② DarkComplexSection 추가 */}
+          <section className={styles.darkSection}>
+            <DarkComplexSection />
+          </section>
 
           <div className={styles.container7}>
             <div className={styles.textBox}>
               <div className={styles.title}>
-                대전의 중심으로 사는<br />
-                <span>착한 가격 아파트</span>
+                송도의 중심으로 사는
+                <br />
+                <span>최고의 브랜드 아파트</span>
               </div>
               <div className={styles.subTitle}>
                 <div className={styles.textLine}></div>
                 <div className={styles.subText}>
-                  완벽한 비전중심에서 완벽한 주거가치까지 더해<br />
-                  대전 엘크루 베네치아이 함께합니다
+                  완벽한 비전중심에서 완벽한 주거가치까지 더해
+                  <br />
+                  대전 유천 벽산블루밍가 함께합니다
                 </div>
               </div>
             </div>
-            <img src={section8Img3} alt="대전 엘크루 베네치아mobile입지안내-image1" />
+            <img
+              src={section8Img3}
+              alt="대전 유천 벽산블루밍 모바일 입지안내 이미지"
+            />
           </div>
 
           <div className={styles.container3}>
@@ -508,25 +604,33 @@ const Main = () => {
                 완벽한 생활에서 준비된 미래까지
               </div>
               <div className={`${styles.text2} fadeUpRepeat`}>
-                기대한 모든 프리미엄이<br />
-                대전 엘크루 베네치아에서 펼쳐집니다
+                기대한 모든 프리미엄이
+                <br />
+                대전 유천 벽산블루밍에서 펼쳐집니다
               </div>
               <div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
               <div className={`${styles.text4} fadeUpRepeat`}>
-                살수록 자부심이 차원이 다른<br />
-                프리미엄 주거라이프를 대전 엘크루 베네치아 모델하우스에서 확인하세요
+                살수록 자부심이 차원이 다른
+                <br />
+                프리미엄 주거라이프를 <br /> 대전 유천 벽산블루밍에서<br />
+                확인하세요
               </div>
             </div>
-            <img src={section2_Image1} alt="대전 엘크루 베네치아mobile조감도-image1" />
+            <img
+              src={section2_Image1}
+              alt="대전 유천 벽산블루밍 모바일 조감도 이미지"
+            />
           </div>
 
-          <div className={styles.container4}>
+          <UnitInfoSection />
+
+          {/* <div className={styles.container4}>
             <div className={styles.text1}>UNITPLAN</div>
             <UnitplanBox />
             <Link to="/FloorPlan/84A" className={styles.text2}>
               <div>더 알아보기 &gt;</div>
             </Link>
-          </div>
+          </div> */}
 
           <div className={styles.container6}>
             {section3Contents.map((section, idx) => (
@@ -541,61 +645,81 @@ const Main = () => {
             ))}
           </div>
 
+
+          {/* <div className={styles.container2}>
+            <div>
+              <img
+                src={section1_Image1}
+                alt="대전 유천 벽산블루밍 브랜드소개 mobile-image5"
+              />
+              <Link to="/Brand/intro" className={styles.btn}>
+                브랜드 소개 {">"}
+              </Link>
+            </div>
+          </div> */}
+          <MobileNewsSection newsList={newsLists} />
+
           {/* 모바일 방문예약 섹션 */}
-<div className={styles.mobileVisitContainer}>
-  <h2>대전 엘크루 베네치아</h2>
-  <p className={styles.mobileSubTitle}>방문예약</p>
-  <p className={styles.mobileInfoText}>
-    방문예약 등록 시 모델하우스 주소 SMS발송 및<br />
-    잔여세대를 안내드립니다.
-  </p>
+          <div className={styles.mobileVisitContainer}>
+            <h2>대전 유천 벽산블루밍</h2>
+            <p className={styles.mobileSubTitle}>방문예약</p>
+            <p className={styles.mobileInfoText}>
+              방문예약 등록 시 모델하우스 주소 SMS발송 및<br />
+              잔여세대를 안내드립니다.
+            </p>
 
-  <form
-    className={styles.mobileVisitForm}
-    action="https://formspree.io/f/movdypjp"
-    method="POST"
-  >
-    <label htmlFor="name">
-      고객명 <span className={styles.redStar}>*</span>
-    </label>
-    <input
-      type="text"
-      name="name"
-      placeholder="고객명"
-      value={registration.name}
-      onChange={handleInputChange}
-      required
-    />
+            <form
+              className={styles.mobileVisitForm}
+              action="https://formspree.io/f/movdypjp"
+              method="POST"
+            >
+              <label htmlFor="name">
+                고객명 <span className={styles.redStar}>*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="고객명"
+                value={registration.name}
+                onChange={handleInputChange}
+                required
+              />
 
-    <label htmlFor="phone">
-      연락처 <span className={styles.redStar}>*</span>
-    </label>
-    <input
-      type="tel"
-      name="phone"
-      placeholder="010-0000-0000"
-      value={registration.phone}
-      onChange={handleInputChange}
-      required
-    />
+              <label htmlFor="phone">
+                연락처 <span className={styles.redStar}>*</span>
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="010-0000-0000"
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
+              <label htmlFor="message">
+                문의 내용
+              </label>
+              <textarea
+                name="message"
+                placeholder="문의 내용이 있을 경우 이곳에 남겨주세요."
+                value={registration.message}
+                onChange={handleInputChange}
+                rows={5}
+              />
 
-    <label htmlFor="message">문의 내용</label>
-    <textarea
-      name="message"
-      placeholder="문의 내용이 있을 경우 이곳에 남겨주세요."
-      value={registration.message}
-      onChange={handleInputChange}
-      rows={5}
-    />
 
-    <button type="submit">등록하기</button>
-  </form>
-</div>
 
+
+              <button type="submit">등록하기</button>
+            </form>
+          </div>
 
           {/* <div className={styles.section}>
             <div className={styles.section9}>
-              <img src={mobilemap1} alt="대전 엘크루 베네치아오시는길안내-mobileimage2" />
+              <img
+                src={mobilemap1}
+                alt="대전 유천 벽산블루밍 오시는길안내-mobileimage2"
+              />
             </div>
           </div> */}
 

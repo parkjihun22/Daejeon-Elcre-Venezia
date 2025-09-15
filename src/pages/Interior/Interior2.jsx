@@ -10,8 +10,11 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
-// 이미지 파일을 추가해야 합니다
-import page1 from "../../assets/Interior/Interior2/page1.jpg";
+
+// import page1 from "../../assets/Interior/Interior2/page1.jpg";
+import Ready from "../../components/Ready/Ready";
+
+
 
 const Interior2 = () => {
   const menuContents = [
@@ -51,76 +54,6 @@ const Interior2 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
-
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 84A인테리어</title>
-        <meta
-          name="description"
-          content="84A인테리어 페이지에서는 대전 엘크루 베네치아의 고급 84A인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 84A인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 84A인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다."
-        />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link rel="canonical" href="https://layershop.kr/Interior/84A" />
-
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta property="og:title" content="대전 엘크루 베네치아 - 84A인테리어" />
-        <meta
-          property="og:description"
-          content="84A인테리어 페이지에서는 대전 엘크루 베네치아의 고급 84A인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 84A인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 84A인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다."
-        />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/Interior/84A"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
-
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 84A인테리어"
-        />
-        <meta
-          name="twitter:description"
-          content="84A인테리어 페이지에서는 대전 엘크루 베네치아의 고급 84A인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 84A인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 84A인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다."
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/Interior/84A"
-        />
-
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-				 {
-			 "@context": "https://schema.org",
-			 "@type": "WebPage",
-			 "name": "대전 엘크루 베네치아 - 84A84A인테리어",
-			 "description": "84A인테리어 페이지에서는 대전 엘크루 베네치아의 고급 84A인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 84A인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 84A인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다.",
-			 "url": "https://layershop.kr/Interior/84A"
-				 }
-				 `}
-        </script>
-      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />
@@ -130,29 +63,28 @@ const Interior2 = () => {
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 84인테리어
+        대전 유천 벽산블루밍 - 84A 인테리어
       </h1>
       <p className={styles.screenReaderOnly}>
-        84A타입의 84A인테리어 페이지에서는 대전 엘크루 베네치아의 고급 84A인테리어
-        디자인을 소개합니다. 세련된 디자인과 최첨단 84A인테리어 요소들이 결합되어,
-        입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 84A인테리어
-        스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다.
-      </p>
+          대전 유천 벽산블루밍 84A 타입 인테리어 페이지입니다. 
+          세련된 디자인과 최신 마감재가 어우러져 고급스럽고 편안한 생활 공간을 제공합니다. 
+          각 공간의 특화 설계와 자재를 확인하며, 매력적인 주거 환경을 경험해 보세요.
+        </p>
 
-      <div className={styles.textBox}>
-        <div>대전의 눈부신 가치 위에</div>
-        <div>대전 엘크루 베네치아이 새로운 자부심으로 찾아옵니다.</div>
-      </div>
+
+        <div className={styles.textBox}>
+        <div>유천의 새로운 중심에서 시작되는</div>
+        <div>대전 유천 벽산블루밍의 가치를 영상으로 확인해보세요</div>
+			</div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
-      <img
-        className={`${styles.image2} ${
-          isImage2Loaded ? styles.showImage2 : ""
-        }`}
-        src={page1}
-        alt="대전 엘크루 베네치아 84인테리어 이미지"
-        onLoad={handleImageLoad} // 이미지 로드 후 애니메이션 실행
-      />
+      {/* <img
+				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
+				src={page1}
+				alt="대전 유천 벽산블루밍 84A 인테리어 안내 이미지"
+				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
+			/> */}
+      <Ready/>
 
       <div className={styles.commonBox2}>
         <div className={styles.notice}>

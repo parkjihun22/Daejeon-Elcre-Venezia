@@ -10,7 +10,8 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
-import page1 from "../../assets/FloorPlan/FloorPlan6/page1.jpg"
+//import page1 from "../../assets/FloorPlan/FloorPlan6/page1.jpg"
+import Ready from "../../components/Ready/Ready";
 
 const FloorPlan6 = () => {
 	const menuContents = [
@@ -18,8 +19,9 @@ const FloorPlan6 = () => {
 		{ title: "59B", url: "/FloorPlan/59B" },
 		{ title: "84A", url: "/FloorPlan/84A" },
 		{ title: "84B", url: "/FloorPlan/84B" },
-		{ title: "119A", url: "/FloorPlan/114A" },
-		{ title: "119B", url: "/FloorPlan/114B" },
+		{ title: "84C", url: "/FloorPlan/114A" },
+		// { title: "세대안내영상", url: "/FloorPlan/videos" }, // 세대안내영상 링크
+		{ title: "E-모델하우스", url: "/FloorPlan/Emodel" },
 	];
 
 	const [isScroll, setIsScroll] = useState(false);
@@ -62,17 +64,19 @@ const FloorPlan6 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>대전의 눈부신 가치 위에</div>
-				<div>더 플래티넘의 새로운 자부심으로 찾아옵니다.</div>
+			<div>평촌의 새로운 중심에서 시작되는</div>
+			<div>롯데캐슬 르씨엘의 가치를 영상으로 확인해보세요</div>
 			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}
-			<img
+			{/*<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
 				alt="청약 안내"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/>
+			/>*/}
+
+			<Ready />
 
 			<div className={styles.commonBox2}>
 				<div className={styles.notice}>

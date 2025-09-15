@@ -20,7 +20,7 @@ const Bener = ({ title }) => {
             <img
                 className={`${styles.benerImage} ${isLoaded ? styles.showImage : ''}`}
                 src={img}
-                alt="jungheung-class-bener"
+                alt="대전 유천 벽산블루밍-benerimage"
             />
             <div className={styles.overlay}></div>
             <div
@@ -40,17 +40,17 @@ const Bener = ({ title }) => {
 export default Bener;
 
 const contents = (text, isLoaded) => {
-    if (text === '엘크루 베네치아 ' || text === '홍보영상' || text === '체크포인트'| text === '당첨자서류안내') {
+    if (text === '롯데캐슬 르씨엘' || text === '홍보영상' || text === '체크포인트' || text === '당첨자서류안내' || text === '대전 유천 벽산블루밍') {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    지친 하루를 마치고 가장 나에 가까운 본연의 모습으로 돌아와 누리는 프리미엄입니다.
+                    하루의 무게를 내려놓고 본연으로 돌아가는 프리미엄.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    대전 핵심주거타운의 중심
+                    유천·태평 생활권, KTX 서대전역 인접 & 도시철도 2호선(트램) 유천역 예정.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    NO.1 브랜드 대전 엘크루 베네치아과 함께합니다.
+                    도심권 신축, 대전 유천 벽산블루밍과 함께합니다.
                 </div>
             </>
         );
@@ -58,16 +58,16 @@ const contents = (text, isLoaded) => {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    대우조선건설이 선택한 새도시!
+                    대전 중구 유천동 생활권의 새로운 주거 중심지.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                   대전 제 1·2 산업단지 및 벤처협동화단지 직주근접  프리미엄
+                    KTX 서대전역 생활권, 도시철도 2호선(트램) 유천역 예정.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    가장 높은 브랜드의 첫 시작
+                    벽산블루밍 브랜드와 함께 높여가는 일상의 가치.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    대전 엘크루 베네치아
+                    대전 유천 벽산블루밍
                 </div>
             </>
         );
@@ -75,10 +75,10 @@ const contents = (text, isLoaded) => {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    수준 높은 생활, 첨단신도시내 착한 브랜드 아파트
+                    교통·교육·생활 모두 가까운 유천 핵심 입지.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    기대하던 모든 프리미엄이 대전 엘크루 베네치아에서 펼쳐집니다
+                    서대전역·트램 예정, 유등천·대형마트·종합병원 인접.
                 </div>
             </>
         );
@@ -86,13 +86,13 @@ const contents = (text, isLoaded) => {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    주거의 품격과 가치를 높이는 특화설계
+                    주거의 품격과 가치를 높이는 특화 설계.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    편리한 생활을 위한 최적의 공간설계
+                    쾌적하고 편리한 생활을 위한 최적의 공간.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    소수에게만 허락된 대전 엘크루 베네치아, 대전에 찾아옵니다
+                    대전 유천 벽산블루밍, 대전 중구 유천동에 자리합니다.
                 </div>
             </>
         );

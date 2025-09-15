@@ -14,6 +14,7 @@ import page1 from "../../assets/LocationEnvironment/LocationEnvironment2/page1.j
 
 const LocationEnvironment1 = () => {
   const menuContents = [
+    // { title: "입지 안내영상", url: "/FloorPlan/videos" },
     { title: "입지안내", url: "/LocationEnvironment/intro" },
     { title: "프리미엄", url: "/LocationEnvironment/primium" },
   ];
@@ -43,109 +44,41 @@ const LocationEnvironment1 = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="robots" content="index, follow" />
-
-        {/* SEO 최적화를 위한 메타 태그 */}
-        <title>대전 엘크루 베네치아 - 프리미엄</title>
-        <meta
-          name="description"
-          content="대전 엘크루 베네치아의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요."
-        />
-        <meta
-          name="keywords"
-          content="대전 엘크루 베네치아, 엘크루 베네치아 , 대전 엘크루 베네치아모델하우스"
-        />
-        <link
-          rel="canonical"
-          href="https://layershop.kr/LocationEnvironment/primium"
-        />
-
-        {/* Open Graph - 소셜 미디어 공유 최적화 */}
-        <meta
-          property="og:title"
-          content="대전 엘크루 베네치아 - 프리미엄"
-        />
-        <meta
-          property="og:description"
-          content="대전 엘크루 베네치아의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요."
-        />
-        <meta
-          property="og:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          property="og:url"
-          content="https://layershop.kr/LocationEnvironment/primium"
-        />
-        <meta property="og:site_name" content="대전 엘크루 베네치아" />
-
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 엘크루 베네치아 - 프리미엄"
-        />
-        <meta
-          name="twitter:description"
-          content="대전 엘크루 베네치아의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요."
-        />
-        <meta
-          name="twitter:image"
-          content="https://layershop.kr/Main1.png"
-        />
-        <meta
-          name="twitter:url"
-          content="https://layershop.kr/LocationEnvironment/primium"
-        />
-
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
-        <script type="application/ld+json">
-          {`
-				 {
-			 "@context": "https://schema.org",
-			 "@type": "WebPage",
-			 "name": "대전 엘크루 베네치아 - 프리미엄",
-			 "description": "대전 엘크루 베네치아의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요.",
-			 "url": "https://layershop.kr/LocationEnvironment/primium"
-				 }
-				 `}
-        </script>
-      </Helmet>
+            <Helmet>
+              <title>대전 유천 벽산블루밍 - 프리미엄</title>
+              <meta
+                name="description"
+                content="대전 유천 벽산블루밍의 프리미엄을 한눈에 확인하세요. 서대전역 생활권, 도시철도 2호선(트램) 유천역 예정, 유등천 수변·생활·의료·쇼핑 인프라, 전용 47㎡·84㎡(A/B) 평면과 커뮤니티 등 핵심 포인트를 안내합니다."
+              />
+              <link rel="canonical" href="https://layershop.kr/LocationEnvironment/primium" />
+              <meta name="robots" content="index,follow" />
+            </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />
 
-      <Bener title="입지환경" />
+      <Bener title="프리미엄" />
 
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아 - 프리미엄
+        대전 유천 벽산블루밍 - 프리미엄
       </h1>
       <p className={styles.screenReaderOnly}>
-        대전 엘크루 베네치아의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한
-        고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용
-        서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고
-        이 아파트에서 제공하는 차별화된 가치를 경험하세요.
+        대전 유천 벽산블루밍만의 차별화된 프리미엄을 만나보세요.
+        교통(서대전역 생활권·트램 2호선 유천역 예정), 유등천 수변과 풍부한 생활·의료·쇼핑 인프라,
+        신축 초고층 설계와 커뮤니티, 전용 47㎡·84㎡(A/B) 실속형 평면 등 실거주 중심의 강점을 제공합니다.
       </p>
 
       <div className={styles.textBox}>
-        <div>대전의 눈부신 가치 위에</div>
-        <div>엘크루 베네치아 의 새로운 자부심으로 찾아옵니다.</div>
+        <div>유천의 눈부신 가치 위에</div>
+        <div>대전 유천 벽산블루밍의 새로운 자부심으로 찾아옵니다.</div>
       </div>
 
       <img
         src={page1}
         className={styles.image3}
-        alt="대전 엘크루 베네치아 프리미엄설명 이미지"
+        alt="대전 유천 벽산블루밍-image1"
       />
 
       <Footer />
