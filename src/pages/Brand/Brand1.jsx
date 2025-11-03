@@ -53,7 +53,7 @@ const Brand1 = () => {
                     name="description"
                     content="대전 유천 벽산블루밍의 브랜드 철학과 가치, 설계 품질을 소개합니다. 대전 중구 유천동의 생활 인프라와 교통(서대전역·도시철도 2호선 트램 예정)까지, 프리미엄 라이프스타일을 확인하세요."
                 />
-                <link rel="canonical" href="https://layershop.kr/Brand/intro" />
+                <link rel="canonical" href="https://www.delidilly.co.kr/Brand/intro" />
                 <meta name="robots" content="index,follow" />
 
                 {/* 선택: OG 태그 (공통 이미지 사용) */}
@@ -64,8 +64,8 @@ const Brand1 = () => {
                     property="og:description"
                     content="대전 유천 벽산블루밍의 브랜드 철학과 가치, 설계 품질을 소개합니다. 서대전역 생활권과 트램(2호선) 예정, 유등천 수변과 다양한 생활·의료 인프라를 가까이 누리는 프리미엄을 경험하세요."
                 />
-                <meta property="og:url" content="https://layershop.kr/Brand/intro" />
-                <meta property="og:image" content="https://layershop.kr/images/og/main.jpg" />
+                <meta property="og:url" content="https://www.delidilly.co.kr/Brand/intro" />
+                <meta property="og:image" content="https://www.delidilly.co.kr/images/og/main.jpg" />
                 </Helmet>
 
             <Header isChanged={isScroll} />

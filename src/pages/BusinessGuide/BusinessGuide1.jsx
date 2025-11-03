@@ -61,7 +61,7 @@ const BusinessGuide1 = () => {
 					content="대전 유천 벽산블루밍 사업 개요와 위치 정보를 확인하세요. 대전 중구 유천동 핵심 입지, 단지 규모와 특징, 임대/분양 안내 등 주요 정보를 한눈에!"
 				/>
 				<meta name="robots" content="index,follow" />
-				<link rel="canonical" href="https://layershop.kr/BusinessGuide/intro" />
+				<link rel="canonical" href="https://www.delidilly.co.kr/BusinessGuide/intro" />
 
 				{/* Open Graph */}
 				<meta property="og:type" content="website" />
@@ -71,8 +71,8 @@ const BusinessGuide1 = () => {
 					property="og:description"
 					content="대전 유천 벽산블루밍 사업 개요와 위치 정보를 확인하세요. 대전 중구 유천동 핵심 입지, 단지 규모와 특징, 임대/분양 안내 등 주요 정보를 한눈에!"
 				/>
-				<meta property="og:url" content="https://layershop.kr/BusinessGuide/intro" />
-				<meta property="og:image" content="https://layershop.kr/img/og/business.jpg" />
+				<meta property="og:url" content="https://www.delidilly.co.kr/BusinessGuide/intro" />
+				<meta property="og:image" content="https://www.delidilly.co.kr/img/og/business.jpg" />
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="630" />
 
@@ -83,8 +83,8 @@ const BusinessGuide1 = () => {
 					name="twitter:description"
 					content="대전 유천 벽산블루밍 사업 개요와 위치 정보를 확인하세요. 대전 중구 유천동 핵심 입지, 단지 규모와 특징, 임대/분양 안내 등 주요 정보를 한눈에!"
 				/>
-				<meta name="twitter:image" content="https://layershop.kr/img/og/business.jpg" />
-				<meta name="twitter:url" content="https://layershop.kr/BusinessGuide/intro" />
+				<meta name="twitter:image" content="https://www.delidilly.co.kr/img/og/business.jpg" />
+				<meta name="twitter:url" content="https://www.delidilly.co.kr/BusinessGuide/intro" />
 
 				{/* JSON-LD (대표 이미지/브레드크럼 포함) */}
 				<script type="application/ld+json">
@@ -92,20 +92,20 @@ const BusinessGuide1 = () => {
 						"@context": "https://schema.org",
 						"@type": "WebPage",
 						"name": "대전 유천 벽산블루밍 - 사업안내",
-						"url": "https://layershop.kr/BusinessGuide/intro",
+						"url": "https://www.delidilly.co.kr/BusinessGuide/intro",
 						"description":
 							"대전 유천 벽산블루밍 사업 개요와 위치 정보를 확인하세요. 대전 중구 유천동 핵심 입지, 단지 규모와 특징, 임대/분양 안내 등 주요 정보를 한눈에!",
 						"primaryImageOfPage": {
 							"@type": "ImageObject",
-							"contentUrl": "https://layershop.kr/img/og/business.jpg",
+							"contentUrl": "https://www.delidilly.co.kr/img/og/business.jpg",
 							"width": 1200,
 							"height": 630
 						},
 						"breadcrumb": {
 							"@type": "BreadcrumbList",
 							"itemListElement": [
-								{ "@type": "ListItem", "position": 1, "name": "홈", "item": "https://layershop.kr/" },
-								{ "@type": "ListItem", "position": 2, "name": "사업안내", "item": "https://layershop.kr/BusinessGuide/intro" }
+								{ "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.delidilly.co.kr/" },
+								{ "@type": "ListItem", "position": 2, "name": "사업안내", "item": "https://www.delidilly.co.kr/BusinessGuide/intro" }
 							]
 						}
 					})}

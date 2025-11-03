@@ -50,7 +50,7 @@ const Brand2 = () => {
 				name="description"
 				content="대전 유천 벽산블루밍 홍보영상에서 단지 설계와 커뮤니티, 서대전역 생활권과 도시철도 2호선(트램) 예정, 유등천 수변 등 풍부한 인프라를 생생히 확인하세요."
 			/>
-			<link rel="canonical" href="https://layershop.kr/Brand/video" />
+			<link rel="canonical" href="https://www.delidilly.co.kr/Brand/video" />
 			<meta name="robots" content="index,follow" />
 
 			{/* OG 태그 */}
@@ -58,14 +58,14 @@ const Brand2 = () => {
 			<meta property="og:site_name" content="대전 유천 벽산블루밍" />
 			<meta property="og:title" content="대전 유천 벽산블루밍 - 홍보영상" />
 			<meta property="og:description" content="대전 유천 벽산블루밍 홍보영상으로 초고층 신축의 품격, 서대전역·트램(2호선) 예정, 유등천과 생활·의료·쇼핑 인프라까지 한눈에 만나보세요." />
-			<meta property="og:url" content="https://layershop.kr/Brand/video" />
-			<meta property="og:image" content="https://layershop.kr/images/og/main.jpg" />
+			<meta property="og:url" content="https://www.delidilly.co.kr/Brand/video" />
+			<meta property="og:image" content="https://www.delidilly.co.kr/images/og/main.jpg" />
 
 			{/* Twitter */}
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:title" content="대전 유천 벽산블루밍 - 홍보영상" />
 			<meta name="twitter:description" content="대전 유천 벽산블루밍 홍보영상에서 단지의 매력적인 디자인과 커뮤니티, 서대전역·트램(2호선) 예정 등 입지 프리미엄을 확인하세요." />
-			<meta name="twitter:image" content="https://layershop.kr/images/og/main.jpg" />
+			<meta name="twitter:image" content="https://www.delidilly.co.kr/images/og/main.jpg" />
 			</Helmet>
 			
 			

@@ -56,7 +56,7 @@ const BusinessGuide2 = () => {
                 name="description"
                 content="대전 유천 벽산블루밍의 분양 일정을 한눈에 확인하세요. 모델하우스 오픈, 청약(임차인) 접수, 서류제출, 당첨자 발표, 계약, 입주(예정) 등 주요 일정을 안내합니다."
               />
-              <link rel="canonical" href="https://layershop.kr/BusinessGuide/plan" />
+              <link rel="canonical" href="https://www.delidilly.co.kr/BusinessGuide/plan" />
               <meta name="robots" content="index,follow" />
             </Helmet>
 

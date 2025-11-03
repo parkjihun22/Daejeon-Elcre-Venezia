@@ -54,7 +54,7 @@ const ComplexGuide1 = () => {
                  name="description"
                  content="대전 유천 벽산블루밍 청약(임차인 모집) 안내를 한눈에 확인하세요. 온라인 접수 절차, 자격 요건, 제출 서류, 일정 및 유의사항을 안내합니다."
                />
-               <link rel="canonical" href="https://layershop.kr/SalesInfo/SubscriptionGuide" />
+               <link rel="canonical" href="https://www.delidilly.co.kr/SalesInfo/SubscriptionGuide" />
                <meta name="robots" content="index,follow" />
              </Helmet>
 

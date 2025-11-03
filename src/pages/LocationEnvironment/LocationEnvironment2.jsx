@@ -50,7 +50,7 @@ const LocationEnvironment1 = () => {
                 name="description"
                 content="대전 유천 벽산블루밍의 프리미엄을 한눈에 확인하세요. 서대전역 생활권, 도시철도 2호선(트램) 유천역 예정, 유등천 수변·생활·의료·쇼핑 인프라, 전용 47㎡·84㎡(A/B) 평면과 커뮤니티 등 핵심 포인트를 안내합니다."
               />
-              <link rel="canonical" href="https://layershop.kr/LocationEnvironment/primium" />
+              <link rel="canonical" href="https://www.delidilly.co.kr/LocationEnvironment/primium" />
               <meta name="robots" content="index,follow" />
             </Helmet>
 

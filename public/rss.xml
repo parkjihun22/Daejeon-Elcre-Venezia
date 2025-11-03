@@ -2,119 +2,119 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>대전 유천 벽산블루밍</title>
-    <link>https://layershop.kr/</link>
+    <link>https://www.delidilly.co.kr/</link>
     <description>대전 유천 벽산블루밍 공식 안내 RSS입니다. 단지 개요, 위치 및 생활권, 청약·모집 안내, 평면 정보, 커뮤니티, 보도자료 등을 확인하실 수 있습니다.</description>
     <language>ko-KR</language>
-    <atom:link href="https://layershop.kr/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.delidilly.co.kr/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
       <title>모바일 상담 예약</title>
-      <link>https://layershop.kr/Promotion/Customer</link>
-      <guid isPermaLink="true">https://layershop.kr/Promotion/Customer</guid>
+      <link>https://www.delidilly.co.kr/Promotion/Customer</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/Promotion/Customer</guid>
       <description><![CDATA[모바일로 편리하게 상담을 예약하실 수 있습니다. 기본 안내와 문의 접수 후 담당자가 순차적으로 연락드립니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>브랜드 소개</title>
-      <link>https://layershop.kr/Brand/intro</link>
-      <guid isPermaLink="true">https://layershop.kr/Brand/intro</guid>
+      <link>https://www.delidilly.co.kr/Brand/intro</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/Brand/intro</guid>
       <description><![CDATA[벽산블루밍의 주거 철학과 디자인 방향, 품질 기준을 소개합니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>홍보영상</title>
-      <link>https://layershop.kr/Brand/video</link>
-      <guid isPermaLink="true">https://layershop.kr/Brand/video</guid>
+      <link>https://www.delidilly.co.kr/Brand/video</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/Brand/video</guid>
       <description><![CDATA[서대전역 생활권과 도시철도 2호선(트램) 예정, 유등천·생활 인프라의 가치를 영상으로 안내합니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>사업 안내</title>
-      <link>https://layershop.kr/BusinessGuide/intro</link>
-      <guid isPermaLink="true">https://layershop.kr/BusinessGuide/intro</guid>
+      <link>https://www.delidilly.co.kr/BusinessGuide/intro</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/BusinessGuide/intro</guid>
       <description><![CDATA[대전광역시 중구 유천동 도심 입지에 조성되는 신축 단지의 기본 개요를 확인하실 수 있습니다. (지하 4층~지상 40층, 2개 동, 총 301세대 / 전용 47㎡·84㎡ A/B)]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>분양 일정</title>
-      <link>https://layershop.kr/BusinessGuide/plan</link>
-      <guid isPermaLink="true">https://layershop.kr/BusinessGuide/plan</guid>
+      <link>https://www.delidilly.co.kr/BusinessGuide/plan</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/BusinessGuide/plan</guid>
       <description><![CDATA[모델하우스 오픈, 청약(임차인) 접수, 당첨자 발표, 계약, 입주(예정) 등 일정을 안내합니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>청약 방법 안내</title>
-      <link>https://layershop.kr/SalesInfo/SubscriptionGuide</link>
-      <guid isPermaLink="true">https://layershop.kr/SalesInfo/SubscriptionGuide</guid>
+      <link>https://www.delidilly.co.kr/SalesInfo/SubscriptionGuide</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/SalesInfo/SubscriptionGuide</guid>
       <description><![CDATA[온라인 청약(임차인 모집) 절차와 유의사항, 자주 묻는 질문을 정리했습니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>청약 안내문</title>
-      <link>https://layershop.kr/SalesInfo/guide</link>
-      <guid isPermaLink="true">https://layershop.kr/SalesInfo/guide</guid>
+      <link>https://www.delidilly.co.kr/SalesInfo/guide</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/SalesInfo/guide</guid>
       <description><![CDATA[청약(임차인) 자격, 신청 방법, 제출 서류 및 일정에 관한 상세 안내입니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>모집공고 안내</title>
-      <link>https://layershop.kr/SalesInfo/announcement</link>
-      <guid isPermaLink="true">https://layershop.kr/SalesInfo/announcement</guid>
+      <link>https://www.delidilly.co.kr/SalesInfo/announcement</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/SalesInfo/announcement</guid>
       <description><![CDATA[공급 규모, 전용면적, 자격 요건, 접수·계약 일정 등 공식 모집공고 게재 시 확인하실 수 있습니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>인지세 납부 안내</title>
-      <link>https://layershop.kr/SalesInfo/stampTax</link>
-      <guid isPermaLink="true">https://layershop.kr/SalesInfo/stampTax</guid>
+      <link>https://www.delidilly.co.kr/SalesInfo/stampTax</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/SalesInfo/stampTax</guid>
       <description><![CDATA[계약 시 인지세 납부 기준과 금액, 전자수입인지(온라인) 구매·납부 절차를 간단히 안내합니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>입지 환경</title>
-      <link>https://layershop.kr/LocationEnvironment/intro</link>
-      <guid isPermaLink="true">https://layershop.kr/LocationEnvironment/intro</guid>
+      <link>https://www.delidilly.co.kr/LocationEnvironment/intro</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/LocationEnvironment/intro</guid>
       <description><![CDATA[KTX 서대전역 생활권과 트램(2호선) 유천역(예정), 유등천 수변과 생활·의료·쇼핑 인프라를 갖춘 입지 특성을 소개합니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>프리미엄</title>
-      <link>https://layershop.kr/LocationEnvironment/premium</link>
-      <guid isPermaLink="true">https://layershop.kr/LocationEnvironment/premium</guid>
+      <link>https://www.delidilly.co.kr/LocationEnvironment/premium</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/LocationEnvironment/premium</guid>
       <description><![CDATA[교통(서대전역·트램 예정), 교육, 쇼핑, 공원 등 생활 전반의 편의 요소를 종합적으로 안내합니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>단지 배치도</title>
-      <link>https://layershop.kr/ComplexGuide/intro</link>
-      <guid isPermaLink="true">https://layershop.kr/ComplexGuide/intro</guid>
+      <link>https://www.delidilly.co.kr/ComplexGuide/intro</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/ComplexGuide/intro</guid>
       <description><![CDATA[2개 동·301세대의 단지 배치, 조경, 보행 동선 계획을 확인하실 수 있습니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>동·호수 배치</title>
-      <link>https://layershop.kr/ComplexGuide/detailintro</link>
-      <guid isPermaLink="true">https://layershop.kr/ComplexGuide/detailintro</guid>
+      <link>https://www.delidilly.co.kr/ComplexGuide/detailintro</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/ComplexGuide/detailintro</guid>
       <description><![CDATA[동·호수(라인) 배치 정보를 제공하여 채광과 조망 확인에 도움을 드립니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>커뮤니티</title>
-      <link>https://layershop.kr/ComplexGuide/community</link>
-      <guid isPermaLink="true">https://layershop.kr/ComplexGuide/community</guid>
+      <link>https://www.delidilly.co.kr/ComplexGuide/community</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/ComplexGuide/community</guid>
       <description><![CDATA[피트니스·GX, 골프연습장, 라운지, 독서 공간 등 커뮤니티 시설 구성과 이용 안내입니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
@@ -122,56 +122,56 @@
     <!-- 평면 정보: 전용 47㎡ / 84㎡A / 84㎡B -->
     <item>
       <title>47</title>
-      <link>https://layershop.kr/FloorPlan/47</link>
-      <guid isPermaLink="true">https://layershop.kr/FloorPlan/47</guid>
+      <link>https://www.delidilly.co.kr/FloorPlan/47</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/FloorPlan/47</guid>
       <description><![CDATA[전용 47㎡ 타입의 실용적 평면 구성과 수납·동선 계획을 소개합니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>84A</title>
-      <link>https://layershop.kr/FloorPlan/84A</link>
-      <guid isPermaLink="true">https://layershop.kr/FloorPlan/84A</guid>
+      <link>https://www.delidilly.co.kr/FloorPlan/84A</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/FloorPlan/84A</guid>
       <description><![CDATA[전용 84A 타입의 평면 정보와 공간 활용 포인트를 확인하세요.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>84B</title>
-      <link>https://layershop.kr/FloorPlan/84B</link>
-      <guid isPermaLink="true">https://layershop.kr/FloorPlan/84B</guid>
+      <link>https://www.delidilly.co.kr/FloorPlan/84B</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/FloorPlan/84B</guid>
       <description><![CDATA[전용 84B 타입의 평면 정보와 공간 활용 포인트를 확인하세요.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>E-모델하우스</title>
-      <link>https://layershop.kr/FloorPlan/Emodel</link>
-      <guid isPermaLink="true">https://layershop.kr/FloorPlan/Emodel</guid>
+      <link>https://www.delidilly.co.kr/FloorPlan/Emodel</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/FloorPlan/Emodel</guid>
       <description><![CDATA[온라인으로 단지와 평면, 인테리어를 사전 체험하실 수 있습니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>인테리어</title>
-      <link>https://layershop.kr/Interior/84A</link>
-      <guid isPermaLink="true">https://layershop.kr/Interior/84A</guid>
+      <link>https://www.delidilly.co.kr/Interior/84A</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/Interior/84A</guid>
       <description><![CDATA[타입별 인테리어 콘셉트와 마감·옵션 정보를 제공합니다. (예: 전용 84A)]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>언론보도</title>
-      <link>https://layershop.kr/press</link>
-      <guid isPermaLink="true">https://layershop.kr/press</guid>
+      <link>https://www.delidilly.co.kr/press</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/press</guid>
       <description><![CDATA[단지 관련 보도자료와 기사 모음입니다. 공식 발표 및 언론 게재 내용을 확인하세요.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>
 
     <item>
       <title>관심고객 등록</title>
-      <link>https://layershop.kr/Promotion/Customer</link>
-      <guid isPermaLink="true">https://layershop.kr/Promotion/Customer</guid>
+      <link>https://www.delidilly.co.kr/Promotion/Customer</link>
+      <guid isPermaLink="true">https://www.delidilly.co.kr/Promotion/Customer</guid>
       <description><![CDATA[관심고객 등록 시 청약·모델하우스·일정 등 주요 안내를 우선 제공해 드립니다.]]></description>
       <pubDate>Sun, 15 Jun 2025 14:00:00 +0900</pubDate>
     </item>

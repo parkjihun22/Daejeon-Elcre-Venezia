@@ -99,7 +99,7 @@ const LocationEnvironment1 = () => {
             content="대전 유천 벽산블루밍의 입지환경을 확인하세요. KTX 서대전역 생활권, 도시철도 2호선(트램) 유천역 예정, 유등천 수변과 풍부한 생활·의료·쇼핑 인프라를 갖춘 대전 중구 유천동 핵심 입지 정보를 제공합니다."
           />
           <meta name="robots" content="index,follow" />
-          <link rel="canonical" href="https://layershop.kr/LocationEnvironment/intro" />
+          <link rel="canonical" href="https://www.delidilly.co.kr/LocationEnvironment/intro" />
 
           {/* Open Graph */}
           <meta property="og:type" content="website" />
@@ -109,8 +109,8 @@ const LocationEnvironment1 = () => {
             property="og:description"
             content="KTX 서대전역 생활권, 트램(2호선) 유천역 예정, 유등천 수변과 생활·의료·쇼핑 인프라까지—대전 유천 벽산블루밍의 핵심 입지를 한눈에 확인하세요."
           />
-          <meta property="og:url" content="https://layershop.kr/LocationEnvironment/intro" />
-          <meta property="og:image" content="https://layershop.kr/img/og/location.jpg" />
+          <meta property="og:url" content="https://www.delidilly.co.kr/LocationEnvironment/intro" />
+          <meta property="og:image" content="https://www.delidilly.co.kr/img/og/location.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
 
@@ -121,8 +121,8 @@ const LocationEnvironment1 = () => {
             name="twitter:description"
             content="KTX 서대전역 생활권, 트램(2호선) 유천역 예정, 유등천 수변과 생활·의료·쇼핑 인프라까지—대전 유천 벽산블루밍의 핵심 입지를 한눈에 확인하세요."
           />
-          <meta name="twitter:image" content="https://layershop.kr/img/og/location.jpg" />
-          <meta name="twitter:url" content="https://layershop.kr/LocationEnvironment/intro" />
+          <meta name="twitter:image" content="https://www.delidilly.co.kr/img/og/location.jpg" />
+          <meta name="twitter:url" content="https://www.delidilly.co.kr/LocationEnvironment/intro" />
 
           {/* JSON-LD (대표 이미지/브레드크럼 포함) */}
           <script type="application/ld+json">
@@ -130,20 +130,20 @@ const LocationEnvironment1 = () => {
               "@context": "https://schema.org",
               "@type": "WebPage",
               "name": "대전 유천 벽산블루밍 - 입지환경",
-              "url": "https://layershop.kr/LocationEnvironment/intro",
+              "url": "https://www.delidilly.co.kr/LocationEnvironment/intro",
               "description":
                 "대전 유천 벽산블루밍의 입지환경을 확인하세요. KTX 서대전역 생활권, 도시철도 2호선(트램) 유천역 예정, 유등천 수변과 풍부한 생활·의료·쇼핑 인프라를 갖춘 대전 중구 유천동 핵심 입지 정보를 제공합니다.",
               "primaryImageOfPage": {
                 "@type": "ImageObject",
-                "contentUrl": "https://layershop.kr/img/og/location.jpg",
+                "contentUrl": "https://www.delidilly.co.kr/img/og/location.jpg",
                 "width": 1200,
                 "height": 630
               },
               "breadcrumb": {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                  { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://layershop.kr/" },
-                  { "@type": "ListItem", "position": 2, "name": "입지환경", "item": "https://layershop.kr/LocationEnvironment/intro" }
+                  { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.delidilly.co.kr/" },
+                  { "@type": "ListItem", "position": 2, "name": "입지환경", "item": "https://www.delidilly.co.kr/LocationEnvironment/intro" }
                 ]
               }
             })}

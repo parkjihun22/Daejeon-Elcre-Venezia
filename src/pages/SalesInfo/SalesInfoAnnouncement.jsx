@@ -74,7 +74,7 @@ const ComplexGuide1 = () => {
                  name="description"
                  content="대전 유천 벽산블루밍 모집공고를 한눈에 확인하세요. 공급세대수, 전용면적, 접수 일정, 자격 요건, 제출 서류, 계약 안내 등 핵심 정보를 제공합니다."
                />
-               <link rel="canonical" href="https://layershop.kr/SalesInfo/announcement" />
+               <link rel="canonical" href="https://www.delidilly.co.kr/SalesInfo/announcement" />
                <meta name="robots" content="index,follow" />
              </Helmet>
 

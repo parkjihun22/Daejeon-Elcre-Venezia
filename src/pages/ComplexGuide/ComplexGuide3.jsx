@@ -56,7 +56,7 @@ const ComplexGuide3 = () => {
           name="description"
           content="대전 유천 벽산블루밍의 커뮤니티 시설을 소개합니다. 피트니스센터, GX룸, 골프연습장, 독서실·작은도서관, 어린이놀이시설, 라운지 등 다양한 편의시설로 생활의 품격을 높여드립니다."
         />
-        <link rel="canonical" href="https://layershop.kr/ComplexGuide/community" />
+        <link rel="canonical" href="https://www.delidilly.co.kr/ComplexGuide/community" />
         <meta name="robots" content="index,follow" />
 
         {/* Open Graph */}
@@ -67,8 +67,8 @@ const ComplexGuide3 = () => {
           property="og:description"
           content="대전 유천 벽산블루밍 커뮤니티: 피트니스·GX, 골프연습장, 독서실·작은도서관, 어린이놀이시설, 라운지 등 다양한 편의시설 안내."
         />
-        <meta property="og:url" content="https://layershop.kr/ComplexGuide/community" />
-        <meta property="og:image" content="https://layershop.kr/img/og/complex.jpg" />
+        <meta property="og:url" content="https://www.delidilly.co.kr/ComplexGuide/community" />
+        <meta property="og:image" content="https://www.delidilly.co.kr/img/og/complex.jpg" />
       </Helmet>
 
 

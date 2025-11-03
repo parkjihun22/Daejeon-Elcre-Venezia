@@ -57,7 +57,7 @@ const ComplexGuide1 = () => {
           name="description"
           content="대전 유천 벽산블루밍 호수 배치도: 동·호수(라인)별 위치와 향·조망, 코어/동선 구성을 한눈에 확인하세요."
         />
-        <link rel="canonical" href="https://layershop.kr/ComplexGuide/detailintro" />
+        <link rel="canonical" href="https://www.delidilly.co.kr/ComplexGuide/detailintro" />
         <meta name="robots" content="index,follow" />
 
         {/* Open Graph (간단) */}
@@ -65,8 +65,8 @@ const ComplexGuide1 = () => {
         <meta property="og:site_name" content="대전 유천 벽산블루밍" />
         <meta property="og:title" content="대전 유천 벽산블루밍 - 호수배치도" />
         <meta property="og:description" content="대전 유천 벽산블루밍 호수 배치도에서 동·호수(라인)별 위치와 향·조망 정보를 확인하세요." />
-        <meta property="og:url" content="https://layershop.kr/ComplexGuide/detailintro" />
-        <meta property="og:image" content="https://layershop.kr/img/og/complex.jpg" />
+        <meta property="og:url" content="https://www.delidilly.co.kr/ComplexGuide/detailintro" />
+        <meta property="og:image" content="https://www.delidilly.co.kr/img/og/complex.jpg" />
       </Helmet>
 
 

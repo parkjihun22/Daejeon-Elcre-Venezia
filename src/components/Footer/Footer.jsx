@@ -11,7 +11,7 @@ import InterestPopup from "../InterestPopup/InterestPopup";
 
 // FAMILY SITE 목록 예시
 const partnerSites = [
-  { name: "대전 유천 벽산블루밍", url: "https://layershop.kr/" },
+  { name: "대전 유천 벽산블루밍", url: "https://www.delidilly.co.kr/" },
 ];
 
 const Footer = () => {

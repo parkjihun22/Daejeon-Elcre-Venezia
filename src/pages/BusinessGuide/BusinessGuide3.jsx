@@ -71,7 +71,7 @@ const BusinessGuide2 = () => {
 				<meta name="robots" content="index,follow" />
 				<link
 				rel="canonical"
-				href="https://layershop.kr/BusinessGuide/documents"
+				href="https://www.delidilly.co.kr/BusinessGuide/documents"
 				/>
 
 				{/* Open Graph */}
@@ -84,11 +84,11 @@ const BusinessGuide2 = () => {
 				/>
 				<meta
 				property="og:url"
-				content="https://layershop.kr/BusinessGuide/documents"
+				content="https://www.delidilly.co.kr/BusinessGuide/documents"
 				/>
 				<meta
 				property="og:image"
-				content="https://layershop.kr/Main1.png"
+				content="https://www.delidilly.co.kr/Main1.png"
 				/>
 			</Helmet>
 			</div>

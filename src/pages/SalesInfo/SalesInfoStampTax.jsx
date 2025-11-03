@@ -56,7 +56,7 @@ const ComplexGuide1 = () => {
                  name="description"
                  content="대전 유천 벽산블루밍 인지세 납부 안내. 계약서 금액 구간별 인지세 개요, 전자수입인지(온라인) 구매·납부 방법, 제출·보관 및 유의사항을 한눈에 확인하세요."
                />
-               <link rel="canonical" href="https://layershop.kr/SalesInfo/stampTax" />
+               <link rel="canonical" href="https://www.delidilly.co.kr/SalesInfo/stampTax" />
                <meta name="robots" content="index,follow" />
              </Helmet>
 

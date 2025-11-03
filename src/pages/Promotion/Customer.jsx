@@ -74,7 +74,7 @@ export default function Customer() {
           content="관심고객 등록 시 대전 유천 벽산블루밍의 청약(임차인 모집) 소식, 모델하우스 오픈 일정, 분양 전환·계약 안내 등 최신 정보를 가장 먼저 받아보실 수 있습니다."
         />
         <meta name="robots" content="index,follow" />
-        <link rel="canonical" href="https://layershop.kr/Promotion/Customer" />
+        <link rel="canonical" href="https://www.delidilly.co.kr/Promotion/Customer" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
@@ -84,8 +84,8 @@ export default function Customer() {
           property="og:description"
           content="관심고객 등록으로 청약(임차인 모집) 소식, 모델하우스 오픈, 분양 전환·계약 안내 등 대전 유천 벽산블루밍의 최신 정보를 빠르게 받아보세요."
         />
-        <meta property="og:url" content="https://layershop.kr/Promotion/Customer" />
-        <meta property="og:image" content="https://layershop.kr/img/og/customer.jpg" />
+        <meta property="og:url" content="https://www.delidilly.co.kr/Promotion/Customer" />
+        <meta property="og:image" content="https://www.delidilly.co.kr/img/og/customer.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -96,8 +96,8 @@ export default function Customer() {
           name="twitter:description"
           content="청약(임차인 모집)·모델하우스 오픈·분양 전환·계약 안내 등 대전 유천 벽산블루밍의 최신 정보를 먼저 받아보세요."
         />
-        <meta name="twitter:image" content="https://layershop.kr/img/og/customer.jpg" />
-        <meta name="twitter:url" content="https://layershop.kr/Promotion/Customer" />
+        <meta name="twitter:image" content="https://www.delidilly.co.kr/img/og/customer.jpg" />
+        <meta name="twitter:url" content="https://www.delidilly.co.kr/Promotion/Customer" />
 
         {/* JSON-LD (대표 이미지/브레드크럼 포함) */}
         <script type="application/ld+json">
@@ -105,20 +105,20 @@ export default function Customer() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "대전 유천 벽산블루밍 - 관심고객등록",
-            "url": "https://layershop.kr/Promotion/Customer",
+            "url": "https://www.delidilly.co.kr/Promotion/Customer",
             "description":
               "관심고객 등록 시 대전 유천 벽산블루밍의 청약(임차인 모집) 소식, 모델하우스 오픈 일정, 분양 전환·계약 안내 등 최신 정보를 가장 먼저 받아보실 수 있습니다.",
             "primaryImageOfPage": {
               "@type": "ImageObject",
-              "contentUrl": "https://layershop.kr/img/og/customer.jpg",
+              "contentUrl": "https://www.delidilly.co.kr/img/og/customer.jpg",
               "width": 1200,
               "height": 630
             },
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://layershop.kr/" },
-                { "@type": "ListItem", "position": 2, "name": "관심고객등록", "item": "https://layershop.kr/Promotion/Customer" }
+                { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.delidilly.co.kr/" },
+                { "@type": "ListItem", "position": 2, "name": "관심고객등록", "item": "https://www.delidilly.co.kr/Promotion/Customer" }
               ]
             }
           })}
